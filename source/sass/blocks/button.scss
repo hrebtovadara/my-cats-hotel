@@ -1,0 +1,34 @@
+.button {
+    list-style: none;
+    border: none;
+    background-color: $color-white;
+    border-radius: 50px;
+    padding: 18px 60px 20px 30px;
+    margin: 20px;
+    position: relative;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 19px;
+    top: 10px;
+    right: 10px;
+    background-color: $color-button-orange;
+    border-radius: 50px;
+    
+}
+
+.button::after {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 36px;
+    top: 18px;
+    right: 2px;
+    background-image: url("../../img/icon-paw.svg");
+    background-repeat: no-repeat;
+}

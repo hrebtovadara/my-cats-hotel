@@ -1,0 +1,28 @@
+.banner {
+    background-image: url("../../img/fons/cats-fon-mobile.png");
+    height: 457px;
+    margin: 0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.banner__title {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 52px;
+    margin: 0;
+}
+
+.banner__text--sity {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+}
+
+.banner__text--description  {
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}

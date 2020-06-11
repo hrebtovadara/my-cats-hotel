@@ -5,24 +5,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
-    rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet"> -->
   <title></title>
 </head>
 
 <body>
-  <div>
+  <div class="general">
     <header class="header">
       <div class="logo header__logo">
-        <img>
+        <img class="logo__image" src="img/logo-desktop.png">
       </div>
       <nav class="nav header__nav">
         <ul class="nav__list">
-          <li class="nav__item"><a href="" class="nav__link">Почему мы?</a></li>
+          <li class="nav__item"><a href="index.html" class="nav__link">Почему мы?</a></li>
           <li class="nav__item"><a href="" class="nav__link">Номера</a></li>
           <li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
           <li class="nav__item"><a href="" class="nav__link">Как нас найти</a></li>
         </ul>
+        <div class="header__contacts">
+          <p class="header__contacts--number">8 (800) 333-55-99</p>
+          <div class="header__contacts--icons social-icon">
+            <svg></svg>
+            <svg></svg>
+            <svg></svg>
+          </div>
+        </div>
+        <!-- <button class="nav__button">
+          <svg class="nav__button--svg">
+             <use xlink:href="img/sprite.svg#icon-menu"></use> 
+          </svg>
+        </button> -->
       </nav>
     </header>
     <main class="main">
@@ -32,47 +45,59 @@
         <p class="banner__text banner__text--description">Уютная гостиница для котов и кошек</p>
         <button class="button banner__button">Забронировать</button>
       </section>
-      <section class="reasons-container">
-        <h3 class="reasons-container__title">Почему мы?</h3>
+      <section class="reasons-container container">
+        <h3 class="reasons-container__title title-text">Почему мы?</h3>
         <ul class="reasons-container__list reasons-list">
           <li class="reasons-list__item reason-block">
-            <img class="reason-block__image">
+            <svg class="reason-block__image--temp">
+              <use class="reason-block__image" xlink:href="img/sprite.svg#icon-temp"></use>
+            </svg>
             <p class="reason-block__title">Комфортная температура</p>
             <p class="reason-block__description">Во всех номерах поддерживается
               комфортная температура в пределах 23 - 25 градусов.
               В каждом номере можно дополнительно отрегулировать температуру.</p>
           </li>
           <li class="reasons-list__item reason-block">
-            <img class="reason-block__image">
+            <svg class=" reason-block__image--cam">
+              <use class="reason-block__image" xlink:href="img/sprite.svg#icon-cam"></use>
+            </svg>
             <p class="reason-block__title">Видеонаблюдение</p>
             <p class="reason-block__description">Мы предоставляем доступ в нашу систему.
               Вы сможете следить за своим питомцем со своего смартфона или компьютера.</p>
           </li>
           <li class="reasons-list__item reason-block">
-            <img class="reason-block__image">
+            <svg class="reason-block__image--avto">
+              <use class="reason-block__image" xlink:href="img/sprite.svg#icon-avto"></use>
+            </svg>
             <p class="reason-block__title">Услуги Зоотакси</p>
             <p class="reason-block__description">Мы приедем за вашим питомцем в любой район Санкт-Петербурга.</p>
           </li>
           <li class="reasons-list__item reason-block">
-            <img class="reason-block__image">
+            <svg class=" reason-block__image--eat">
+              <use class="reason-block__image" xlink:href="img/sprite.svg#icon-eat"></use>
+            </svg>
             <p class="reason-block__title">Сбалансированное питание</p>
             <p class="reason-block__description">Вы можете привезти свой корм или доверить рацион своего
               питомца нашим профессионалам.</p>
           </li>
           <li class="reasons-list__item reason-block">
-            <img class="reason-block__image">
+            <svg class="reason-block__image--walk">
+              <use class="reason-block__image" xlink:href="img/sprite.svg#icon-walk"></use>
+            </svg>
             <p class="reason-block__title">Ежедневные прогулки</p>
             <p class="reason-block__description">По вашему желанию мы выгуливаем вашего питомца
               два раза в день на специализированной закрытой территории.</p>
           </li>
           <li class="reasons-list__item reason-block">
-            <img class="reason-block__image">
+            <svg class="reason-block__image--veterinary">
+              <use class="reason-block__image" xlink:href="img/sprite.svg#icon-veterinary"></use>
+            </svg>
             <p class="reason-block__title">Лучшие ветеринары</p>
             <p class="reason-block__description">В гостинице 24 часа дежурит ветеринарный врач,
               который окажет любую помощь в случае необходимости.</p>
           </li>
       </section>
-      <section class="rooms-container">
+      <section class="rooms-container container">
         <h3 class="rooms-container__title">Номера</h3>
         <ul class="rooms-container-list rooms-list">
           <li class="rooms-list__item rooms-block">
@@ -113,12 +138,15 @@
           </li>
         </ul>
         <!-- подумать мб заменить на радиобаттон -->
-        <div class="rooms-container__switch switch">
-          <ul class="switch__points"></ul>
-          <ul class="switch__arrow"></ul>
+        <div class="rooms-container__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item"><button class="slider__button slider__button--active"></button></li>
+            <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
+            <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
+          </ul>
         </div>
       </section>
-      <section class="feedback-container">
+      <section class="feedback-container container">
         <h3 class="feedback-container__title">Отзывы</h3>
         <ul class="feedback-container__list feedback-list">
           <li class="feedback-list__item feedback-block">
@@ -149,9 +177,12 @@
             </div>
           </li>
         </ul>
-        <div class="rooms-container__switch switch">
-          <ul class="switch__points"></ul>
-          <ul class="switch__arrow"></ul>
+        <div class="feedback-container__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item"><button class="slider__button slider__button--active"></button></li>
+            <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
+            <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
+          </ul>
         </div>
       </section>
     </main>
@@ -178,9 +209,11 @@
             </li>
             <li class="address__item">
               <p class="address__item--label">Социальные сети</p>
-              <svg></svg>
-              <svg></svg>
-              <svg></svg>
+              <div class="address__item--icons social-icon">
+                <svg></svg>
+                <svg></svg>
+                <svg></svg>
+              </div>
             </li>
           </ul>
         </div>
@@ -203,8 +236,8 @@
         </nav>
       </div>
       <div class="footer-confidentiality">
-         <p class="footer-confidentiality__year">2019 Все права защищены</p>
-         <p class="footer-confidentiality__politic">Политика конфиденциальности</p>
+        <p class="footer-confidentiality__year">2019 Все права защищены</p>
+        <p class="footer-confidentiality__politic">Политика конфиденциальности</p>
       </div>
     </footer>
   </div>

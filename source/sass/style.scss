@@ -1,0 +1,85 @@
+  
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Rubik/Rubik-Regular.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Rubik/Rubik-Medium.ttf") format("ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Lato/Lato-Regular.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../../fonts/Lato/Lato-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    
+  }
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+    background-color: #E5E5E5;
+}
+ 
+  img {
+    max-width: 100%;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+$tablet-width: 768px;
+$desktop-width: 1170px;
+$mobile-width-only: 767px;
+
+$color-white: #FFFFFF;
+$color-font: #1A212F;
+$color-fon: #fffefc;
+$color-block: #FAC663;
+$color-button-orange: #FF7236;
+$color-image-item: #FAB751;
+
+
+@import "../../node_modules/node-normalize-scss/normalize";
+@import "../sass/blocks/container.scss";
+@import "../sass/blocks/general.scss";
+@import "../sass/blocks/header.scss";
+@import "../sass/blocks/logo.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/social-icon.scss";
+@import "../sass/blocks/banner.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/reasons-container.scss";
+@import "../sass/blocks/title-text.scss";
+@import "../sass/blocks/reasons-container.scss";
+@import "../sass/blocks/reasons-list.scss";
+@import "../sass/blocks/reason-block.scss";
+@import "../sass/blocks/container.scss";
