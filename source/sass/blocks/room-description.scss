@@ -1,0 +1,36 @@
+.room-description {
+    min-height: 252px;
+    padding: 25px;
+    margin: 0;
+}
+
+.room-description__title {
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+}
+
+.room-description__list {
+    padding-top: 20px;
+    font-size: 15px;
+    padding-left: 19px;
+}
+
+.room-description__item {
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.room-description__item::before {
+    position: absolute;
+    content: " ";
+    background-color: $color-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    top: 3px;
+    left: -19px;
+}
+

@@ -1,4 +1,15 @@
 .rooms-block {
-    min-height: 192px;
+    min-height: 444px;
     width: 290px;
+    background-color: $color-white;
+    
+    box-shadow: 0 0 16px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.rooms-block__image {
+    width: 290px;
+    height: 192px;
+    display: block;
 }

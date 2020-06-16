@@ -1,0 +1,26 @@
+.feedback-block {
+    min-height: 230px;
+    background-color: $color-white;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 25px 21px 25px 56px;
+    
+    box-shadow: 0 0 16px rgba(0,0,0,0.05);
+}
+
+.feedback-block__info {
+    display: none;
+}
+
+.feedback-block__text {
+    margin: 0;
+}
+
+.feedback-block__text::before {
+    position: absolute;
+    content: " ";
+    background-image: url("../../img/sprite-quotes.svg");
+    width: 21px;
+    height: 22px;
+    left: 40px;
+}
