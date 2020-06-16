@@ -1,0 +1,13 @@
+.address {
+    background-color: $color-block;
+    padding: 15px;
+}
+
+.address__item {
+    margin-bottom: 30px;
+}
+
+.address__item--label {
+    font-size: 15px;
+    font-weight: bold;
+}

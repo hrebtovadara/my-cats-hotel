@@ -66,11 +66,13 @@ $mobile-width-only: 767px;
 
 $color-white: #FFFFFF;
 $color-font: #1A212F;
+$color-font-footer: #8F8F8F;
 $color-fon: #fffefc;
 $color-block: #FAC663;
 $color-button-orange: #FF7236;
 $color-image-item: #FAB751;
 $color-inactive: #E1E1E1;
+$color-line: #EFEFEF;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
@@ -94,5 +96,9 @@ $color-inactive: #E1E1E1;
 @import "../sass/blocks/room-description.scss";
 @import "../sass/blocks/slider.scss";
 @import "../sass/blocks/feedback-block.scss";
+@import "../sass/blocks/address.scss";
+@import "../sass/blocks/footer-map";
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/footer-confidentiality.scss";
 
 @import "../sass/blocks/visually-hidden.scss";

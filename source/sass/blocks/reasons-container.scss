@@ -1,4 +1,16 @@
 .reasons-container {
     margin: 0;
     padding: 0 15px;
+    position: relative;
+}
+
+.reasons-container::after {
+    position: absolute;
+    content:  " ";
+    background-image: url("../img/sprite.svg#icon-avto");
+    width: 116px;
+    height: 99px;
+    z-index: 3;
+    top: 1px;
+    right: 1px;
 }

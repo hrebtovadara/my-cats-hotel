@@ -17,7 +17,14 @@
 }
 
 .slider__button:hover,
-.slider__button:active {
+.slider__button:active,
+.slider__button:focus {
+    outline: none;
     background-color: $color-block;
     border: none;
+}
+
+
+.slider__button--active {
+    background-color: $color-block;
 }
