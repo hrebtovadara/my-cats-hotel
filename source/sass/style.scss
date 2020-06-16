@@ -12,13 +12,13 @@
 }
 
 @font-face {
-    font-family: "Rubik";
+    font-family: "Lato";
     src: url("../../fonts/Lato/Lato-Regular.ttf") format("ttf");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Rubik";
+    font-family: "Lato";
     src: url("../../fonts/Lato/Lato-Bold.ttf") format("ttf");
     font-weight: bold;
 }
@@ -41,6 +41,11 @@ body {
     box-sizing: border-box;
     min-width: 320px;
     background-color: #E5E5E5;
+
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
 }
  
   img {
@@ -83,3 +88,6 @@ $color-image-item: #FAB751;
 @import "../sass/blocks/reasons-list.scss";
 @import "../sass/blocks/reason-block.scss";
 @import "../sass/blocks/container.scss";
+@import "../sass/blocks/rooms-block.scss";
+
+@import "../sass/blocks/visually-hidden.scss";
