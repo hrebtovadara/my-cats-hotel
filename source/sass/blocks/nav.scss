@@ -7,6 +7,7 @@
     font-size: 20px;
     font-weight: bold;
     color: $color-font;
+    position: relative;
 }
 
 .nav__list--header .nav__item {
@@ -26,4 +27,25 @@
 .nav__list--footer .nav__item {
     padding: 10px 0;
     width: 130px;
+}
+
+.nav__button {
+    position: absolute;
+    list-style: none;
+    border: none;
+    background-color: transparent;
+    top: 25px;
+    right: 25px;
+    padding: 0;
+    outline-style: none;
+}
+
+.nav__button--svg-close {
+    width: 14px;
+    height: 14px;
+}
+
+.nav__button--svg-menu {
+    width: 22px;
+    height: 14px;
 }

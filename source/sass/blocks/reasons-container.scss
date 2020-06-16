@@ -2,15 +2,20 @@
     margin: 0;
     padding: 0 15px;
     position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .reasons-container::after {
     position: absolute;
     content:  " ";
-    background-image: url("../img/sprite.svg#icon-avto");
+    background-image: url("../img/fon-paw.svg");
+    display: block;
+    opacity: .15;
     width: 116px;
     height: 99px;
-    z-index: 3;
-    top: 1px;
-    right: 1px;
-}
+    z-index: -1;
+    top: 20px;
+    right: -30px;
+    transform: rotate(30deg);
+   }

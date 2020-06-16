@@ -1,0 +1,19 @@
+.rooms-container {
+    
+    position: relative;
+   
+    z-index: 2;
+}
+
+.rooms-container::after {
+    position: absolute;
+    content:  " ";
+    background-image: url("../img/fon-fish.svg");
+    display: block;
+    opacity: .15;
+    width: 150px;
+    height: 46px;
+    z-index: -1;
+    top: 30px;
+    left: 0px;   
+}

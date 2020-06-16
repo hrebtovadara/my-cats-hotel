@@ -5,6 +5,12 @@
     margin: 0;
     padding: 15px;
 }
+
+.header--with-js {
+    height: 62px;
+    background-color: $color-white;
+}
+
 .header__contacts--number {
     font-family: "Rubik", sans-serif;
     font-style: normal;
