@@ -27,21 +27,27 @@
         <div class="header__contacts">
           <p class="header__contacts--number">8 (800) 333-55-99</p>
           <div class="header__contacts--icons social-icon">
-            <svg class="social-icon__item"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
-            <svg class="social-icon__item"><use xlink:href="img/sprite.svg#icon-inst"></use></svg>
-            <svg class="social-icon__item"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+            <svg class="social-icon__item">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+            <svg class="social-icon__item">
+              <use xlink:href="img/sprite.svg#icon-inst"></use>
+            </svg>
+            <svg class="social-icon__item">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
           </div>
         </div>
         <button class="nav-header__button nav-header__button--close">
           <svg class="nav-header__button--svg-close">
-             <use xlink:href="img/sprite.svg#icon-close"></use> 
+            <use xlink:href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </nav>
       <button class="visually-hidden nav-header__button nav-header__button--menu">
         <svg class="nav-header__button--svg-menu">
-          <use xlink:href="img/sprite.svg#icon-menu"></use> 
-       </svg>
+          <use xlink:href="img/sprite.svg#icon-menu"></use>
+        </svg>
       </button>
     </header>
     <main class="main">
@@ -121,13 +127,13 @@
           <li class="rooms-list__item rooms-block">
             <img class="rooms-block__image" src="img/room/econom-plus-slider.jpg">
             <div class="rooms-block__description room-description">
-              <p class="room-description__title">Эконом-плюс</p>
+              <p class="room-description__title">Эконом плюс</p>
               <ul class="room-description__list">
                 <li class="room-description__item">Площадь - 0,90 м2</li>
-                <li class="room-description__item">Размеры (ШхГхВ) — 90х100х180 см</li>
+                <li class="room-description__item">Размеры (ШхГхВ) — <br /> 90х100х180 см</li>
                 <li class="room-description__item">Цена за сутки: 200₽</li>
-                <button class="room-description__button button button--orange">Забронировать</button>
               </ul>
+              <button class="room-description__button button button--orange">Забронировать</button>
             </div>
           </li>
           <li class="rooms-list__item rooms-block visually-hidden">
@@ -138,8 +144,8 @@
                 <li class="room-description__item">Площадь - 1,13 м2</li>
                 <li class="room-description__item">Размеры (ШхГхВ) - 100х125х180 см</li>
                 <li class="room-description__item">Цена за сутки: 250₽</li>
-                <button class="room-description__button button button--orange">Забронировать</button>
               </ul>
+              <button class="room-description__button button button--orange">Забронировать</button>
             </div>
           </li>
           <li class="rooms-list__item rooms-block visually-hidden">
@@ -148,19 +154,37 @@
               <p class="room-description__title">Сьют</p>
               <ul class="room-description__list">
                 <li class="room-description__item">Площадь - 1,56 м2</li>
-                <li class="room-description__item">Размеры (ШхГхВ) - 125х125х180 см</li>
+                <li class="room-description__item">Размеры (ШхГхВ)- 125х125х180 см</li>
                 <li class="room-description__item">Цена за сутки: 350₽</li>
-                <button class="room-description__button button button--orange">Забронировать</button>
               </ul>
+              <button class="room-description__button button button--orange">Забронировать</button>
             </div>
           </li>
         </ul>
         <!-- подумать мб заменить на радиобаттон -->
-        <div class="rooms-container__slider slider">
-          <ul class="slider__list">
+        <!-- <div class="rooms-container__slider slider">
+          <ul class="slider__list"></ul>
             <li class="slider__item"><button class="slider__button slider__button--active"></button></li>
             <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
             <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
+          </ul>
+        </div> -->
+
+        <div class="rooms-container__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <input type="radio" class="slider__input slider__button--active" id="slider-one" name="slider-rooms"
+                checked>
+              <label for="slider-one" class="slider__label"></label>
+            </li>
+            <li class="slider__item">
+              <input type="radio" class="slider__input slider__button--active" id="slider-two" name="slider-rooms">
+              <label for="slider-two" class="slider__label"></label>
+            </li>
+            <li class="slider__item">
+              <input type="radio" class="slider__input slider__button--active" id="slider-three" name="slider-rooms">
+              <label for="slider-three" class="slider__label"></label>
+            </li>
           </ul>
         </div>
       </section>
@@ -197,9 +221,20 @@
         </ul>
         <div class="feedback-container__slider slider">
           <ul class="slider__list">
-            <li class="slider__item"><button class="slider__button slider__button--active"></button></li>
-            <li class="slider__item"><button class="slider__button" ></button></li>
-            <li class="slider__item"><button class="slider__button"></button></li>
+            <li class="slider__item">
+              <input type="radio" class="slider__input input-feedback" id="slider-feedback-one" name="slider-feedback"
+                checked>
+              <label for="slider-feedback-one" class="slider__label"></label>
+            </li>
+            <li class="slider__item">
+              <input type="radio" class="slider__input input-feedback" id="slider-feedback-two" name="slider-feedback">
+              <label for="slider-feedback-two" class="slider__label"></label>
+            </li>
+            <li class="slider__item">
+              <input type="radio" class="slider__input input-feedback" id="slider-feedback-three"
+                name="slider-feedback">
+              <label for="slider-feedback-three" class="slider__label"></label>
+            </li>
           </ul>
         </div>
       </section>
@@ -207,7 +242,7 @@
     <footer class="footer">
       <div class="footer__address">
         <div class="footer__address--text address">
-          <h3 class="address__title  title-text" >Как нас найти</h3>
+          <h3 class="address__title  title-text">Как нас найти</h3>
           <ul class="address__list">
             <li class="address__item">
               <p class="address__item--label">Адрес</p>
@@ -228,15 +263,25 @@
             <li class="address__item">
               <p class="address__item--label">Социальные сети</p>
               <div class="address__item--icons social-icon">
-                <svg><use class="social-icon__item" xlink:href="img/sprite.svg#icon-fb"></use></svg>
-                <svg><use class="social-icon__item" xlink:href="img/sprite.svg#icon-inst"></use></svg>
-                <svg><use class="social-icon__item" xlink:href="img/sprite.svg#icon-vk"></use></svg>
+                <svg class="social-icon__item">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+                <svg class="social-icon__item">
+                  <use xlink:href="img/sprite.svg#icon-inst"></use>
+                </svg>
+                <svg class="social-icon__item">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </div>
             </li>
           </ul>
         </div>
         <div class="footer__address--map footer-map">
-          <iframe class="footer-map__iframe"></iframe>
+          <div style="position:relative;overflow:hidden;">
+            <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a> -->
+            <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=44.991843%2C53.154254&sspn=0.061626%2C0.020070&utm_medium=mapframe&utm_source=maps&z=17.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a> -->
+            <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
+          </div>
           <img>
         </div>
       </div>
@@ -244,12 +289,12 @@
         <div class="footer-nav__logo">
           <img src="img/logo-desktop.png">
         </div>
-        <nav class="footer-nav__navigation nav">
-          <ul class="nav__list nav__list--footer">
-            <li class="nav__item"><a href="" class="nav__link">Почему мы?</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Номера</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Как нас найти</a></li>
+        <nav class="footer-nav__navigation nav-footer">
+          <ul class="nav-footer__list">
+            <li class="nav-footer__item"><a href="" class="nav-footer__link">Почему мы?</a></li>
+            <li class="nav-footer__item"><a href="" class="nav-footer__link">Отзывы</a></li>
+            <li class="nav-footer__item"><a href="" class="nav-footer__link">Номера</a></li>
+            <li class="nav-footer__item"><a href="" class="nav-footer__link">Как нас найти</a></li>
           </ul>
         </nav>
       </div>
@@ -263,22 +308,51 @@
 
 <script>
 
-let closeButton = document.querySelector(".nav-header__button");
-let header = document.querySelector(".header");
-let headerNav = document.querySelector(".header__nav");
-let navButton = document.querySelector(".nav-header__button--menu");
+  let closeButton = document.querySelector(".nav-header__button");
+  let header = document.querySelector(".header");
+  let headerNav = document.querySelector(".header__nav");
+  let navButton = document.querySelector(".nav-header__button--menu");
 
-closeButton.onclick = function () {
-  header.classList.toggle("header--with-js");
-  headerNav.classList.toggle("visually-hidden");
-  navButton.classList.toggle("visually-hidden");
-}
+  closeButton.onclick = function () {
+    header.classList.toggle("header--with-js");
+    headerNav.classList.toggle("visually-hidden");
+    navButton.classList.toggle("visually-hidden");
+  }
 
-navButton.onclick = function () {
-  header.classList.toggle("header--with-js");
-  headerNav.classList.toggle("visually-hidden");
-  navButton.classList.toggle("visually-hidden");
-}
+  navButton.onclick = function () {
+    header.classList.toggle("header--with-js");
+    headerNav.classList.toggle("visually-hidden");
+    navButton.classList.toggle("visually-hidden");
+  }
+
+  // let feedbackInputOne = document.querySelector("#slider-feedback-one");
+  // let feedbackInputTwo = document.querySelector("#slider-feedback-two");
+  // let feedbackInputTree = document.querySelector("#slider-feedback-three");
+  let feedbackBlockArr = document.querySelectorAll(".feedback-block");
+  let feedbackInputArr = document.querySelectorAll(".input-feedback");
+
+  for (let i = 0; i < feedbackInputArr.length; i++) {
+    feedbackInputArr[i].addEventListener("click", function() {
+      for(block of feedbackBlockArr) {
+        block.classList.add("visually-hidden")
+      }
+      feedbackBlockArr[i].classList.remove("visually-hidden")
+
+    })
+  }
+  // feedbackInput.forEach(elementFeedback => {
+  //   elementFeedback.onclick = function () {
+  //     for (element of feedbackTextOne) {
+  //       element.classList.toggle("visually-hidden");
+  //     }
+  //   }
+  // });
+
+  // feedbackInputOne.onclick = function () {
+  //   for (element of feedbackTextOne) {
+  //   element.classList.toggle("visually-hidden");
+  //   }
+  // }        
 </script>
 
 </html>

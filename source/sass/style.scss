@@ -82,7 +82,7 @@ $color-line: #EFEFEF;
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 @import "../../node_modules/node-normalize-scss/normalize";
-@import "../sass/blocks/container.scss";
+
 @import "../sass/blocks/general.scss";
 @import "../sass/blocks/button.scss";
 @import "../sass/blocks/header.scss";
@@ -100,10 +100,13 @@ $color-line: #EFEFEF;
 @import "../sass/blocks/rooms-block.scss";
 @import "../sass/blocks/room-description.scss";
 @import "../sass/blocks/slider.scss";
+@import "../sass/blocks/feedback-container.scss";
 @import "../sass/blocks/feedback-block.scss";
 @import "../sass/blocks/address.scss";
 @import "../sass/blocks/footer-map";
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/footer-confidentiality.scss";
+@import "../sass/blocks/nav-footer.scss";
+@import "../sass/blocks/container.scss";
 
 @import "../sass/blocks/visually-hidden.scss";

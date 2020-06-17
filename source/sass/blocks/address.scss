@@ -1,10 +1,14 @@
 .address {
     background-color: $color-block;
-    padding: 15px;
+    padding: 35px 15px;
 }
 
 .address__item {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+}
+
+.address__item:last-child {
+    margin-bottom: 0;
 }
 
 .address__item--label {
@@ -14,4 +18,19 @@
 
 .address__title {
     text-align: left;
+    margin: 0;
+}
+
+.address__list {
+    margin: 0;
+    padding: 30px 0 0;
+}
+
+.address__item--description {
+    margin: 0;
+}
+
+.address__item--label {
+    margin: 0;
+    margin-bottom: 10px;
 }

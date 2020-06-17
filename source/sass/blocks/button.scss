@@ -5,7 +5,6 @@
     padding: 15px 60px 17px 30px;
     margin: 0;
     position: relative;
-
     font-family: "Lato", sans-serif;
     font-size: 16px;
 }
@@ -19,6 +18,8 @@
 .button--orange {
     background-color: $color-button-orange;
     color: $color-white;
+    min-width: 240px;
+    height: 50px;
 }
 
 .button--white::before {
@@ -40,8 +41,8 @@
     height: 36px;
     font-size: 16px;
     line-height: 19px;
-    top: 10px;
-    right: 10px;
+    top: 7px;
+    right: 7px;
     background-color: $color-white;
     border-radius: 50px;
 }
@@ -62,8 +63,8 @@
     content: "";
     width: 36px;
     height: 36px;
-    top: 18px;
-    right: 2px;
+    top: 16px;
+    right: -1px;
     background-image: url("../../img/icon-button-paw-orange.svg");
     background-repeat: no-repeat;
 }
