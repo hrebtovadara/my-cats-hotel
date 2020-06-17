@@ -1,3 +1,12 @@
+.social-icon {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.social-icon__item {
+  margin-right: 20px;
+}
 
 .social-icon svg{
   height: 24px;

@@ -60,6 +60,10 @@ body {
     list-style: none;
   }
 
+  button {
+    outline-style: none;
+  }
+
 $tablet-width: 768px;
 $desktop-width: 1170px;
 $mobile-width-only: 767px;
@@ -80,12 +84,12 @@ $color-line: #EFEFEF;
 @import "../../node_modules/node-normalize-scss/normalize";
 @import "../sass/blocks/container.scss";
 @import "../sass/blocks/general.scss";
+@import "../sass/blocks/button.scss";
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/logo.scss";
-@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/nav-header.scss";
 @import "../sass/blocks/social-icon.scss";
 @import "../sass/blocks/banner.scss";
-@import "../sass/blocks/button.scss";
 @import "../sass/blocks/reasons-container.scss";
 @import "../sass/blocks/title-text.scss";
 @import "../sass/blocks/reasons-container.scss";

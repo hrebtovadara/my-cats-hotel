@@ -1,0 +1,88 @@
+.nav-header {
+    min-height: 308px;
+    padding: 38px 0 39px;
+}
+.nav-header__item a {
+    color: $color-font;
+}
+
+.nav-header__list {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: $color-font;
+    position: relative;
+    margin: 0;
+}
+
+.nav-header__item {
+    padding: 8px 15px;
+    margin: 0 -15px;
+    min-height: 40px;
+}
+
+.nav-header__item:hover {
+    background-color: $color-image-item;
+}
+
+.nav-header__button {
+    position: absolute;
+    list-style: none;
+    border: none;
+    background-color: transparent;
+    top: 0px;
+    right: 0px;
+}
+
+.nav-header__button--svg-close {
+    width: 14px;
+    height: 14px;
+}
+
+.nav-header__button--svg-menu {
+    width: 22px;
+    height: 14px;
+}
+
+.nav-header__button--menu {
+    padding: 24px 20px;
+}
+
+.nav-header__button--close {
+    padding: 25px;
+}
+
+.nav-header__button--menu:hover {
+    margin-top: -0px;
+    margin-right: 0px;
+    width: 62px;
+    height: 62px;
+    background-color: $color-block;
+}
+
+.nav-header__button--close:hover {
+    margin-top: -0px;
+    margin-right: 0px;
+    width: 64px;
+    height: 62px;
+    background-color: $color-image-item;
+   
+}
+
+
+
+
+.nav__list--footer {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: $color-font;
+    line-height: 19px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav__list--footer .nav__item {
+    padding: 10px 0;
+    width: 130px;
+}

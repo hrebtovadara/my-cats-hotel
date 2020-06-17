@@ -3,7 +3,7 @@
     width: 320px;
     background-color: $color-block;
     margin: 0;
-    padding: 15px;
+    padding: 12px 15px;
 }
 
 .header--with-js {
@@ -17,5 +17,8 @@
     font-size: 16px;
     line-height: 19px;
     margin: 0;
-    
+}
+
+.header__contacts--number {
+    padding: 20px 0 20px ;
 }
