@@ -325,34 +325,18 @@
     navButton.classList.toggle("visually-hidden");
   }
 
-  // let feedbackInputOne = document.querySelector("#slider-feedback-one");
-  // let feedbackInputTwo = document.querySelector("#slider-feedback-two");
-  // let feedbackInputTree = document.querySelector("#slider-feedback-three");
   let feedbackBlockArr = document.querySelectorAll(".feedback-block");
   let feedbackInputArr = document.querySelectorAll(".input-feedback");
 
   for (let i = 0; i < feedbackInputArr.length; i++) {
     feedbackInputArr[i].addEventListener("click", function() {
       for(block of feedbackBlockArr) {
-        block.classList.add("visually-hidden")
+        block.classList.add("visually-hidden");
       }
-      feedbackBlockArr[i].classList.remove("visually-hidden")
-
+      feedbackBlockArr[i].classList.remove("visually-hidden");
     })
   }
-  // feedbackInput.forEach(elementFeedback => {
-  //   elementFeedback.onclick = function () {
-  //     for (element of feedbackTextOne) {
-  //       element.classList.toggle("visually-hidden");
-  //     }
-  //   }
-  // });
-
-  // feedbackInputOne.onclick = function () {
-  //   for (element of feedbackTextOne) {
-  //   element.classList.toggle("visually-hidden");
-  //   }
-  // }        
+         
 </script>
 
 </html>
