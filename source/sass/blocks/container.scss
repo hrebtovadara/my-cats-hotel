@@ -13,5 +13,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+    .container {
+        padding-left: 98px;
+        padding-right: 98px;
+    }
 }

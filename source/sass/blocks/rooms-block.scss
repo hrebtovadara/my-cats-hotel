@@ -50,5 +50,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+    .rooms-block {
+        min-height: auto;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: none;
+        position: relative;
+        overflow: visible;
+    }
+
 }

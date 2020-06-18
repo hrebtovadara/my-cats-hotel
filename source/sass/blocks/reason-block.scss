@@ -114,5 +114,41 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+    .reason-block {
+        min-height: 321px;
+        width: 370px;
+    }
+    
+    .reason-block__container {
+        width: 91px;
+        height: 91px;
+        margin-left: 15px;
+        margin-top: 13px;
+    }
+    
+    .reason-block__image--temp {
+        width: 31px;
+        height: 55px;
+    }
+    .reason-block__image--cam {
+        width: 47px;
+        height: 37px;
+    }
+    .reason-block__image--avto {
+        width: 51px;
+        height: 31px;
+    }
+    .reason-block__image--eat {
+        width: 53px;
+        height: 35px;
+    }
+    
+    .reason-block__image--walks {
+        width: 47px;
+        height: 39px;
+    }
+    .reason-block__image--veterinary {
+        width: 41px;
+        height: 43px;
+    }
 }
