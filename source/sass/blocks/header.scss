@@ -57,5 +57,12 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+    .header {
+        height: 76px;
+        padding: 12px 98px;
+    }
+
+    .header__contacts {
+        display: none;
+    }
 }
