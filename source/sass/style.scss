@@ -77,6 +77,7 @@ $color-button-orange: #FF7236;
 $color-image-item: #FAB751;
 $color-inactive: #E1E1E1;
 $color-line: #EFEFEF;
+$color-autor: #848484;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Rubik:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
@@ -106,6 +107,7 @@ $color-line: #EFEFEF;
 @import "../sass/blocks/footer-map";
 @import "../sass/blocks/footer.scss";
 @import "../sass/blocks/footer-confidentiality.scss";
+@import "../sass/blocks/footer-nav.scss";
 @import "../sass/blocks/nav-footer.scss";
 @import "../sass/blocks/container.scss";
 

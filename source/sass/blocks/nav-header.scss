@@ -2,6 +2,7 @@
     min-height: 308px;
     padding: 38px 0 39px;
 }
+
 .nav-header__item a {
     color: $color-font;
 }
@@ -66,6 +67,41 @@
     width: 64px;
     height: 62px;
     background-color: $color-image-item;
-   
+   }
+
+   .nav-header__item--search {
+       display: none;
+   }
+
+@media (min-width: $tablet-width) {
+    .nav-header {
+        min-height: 40px;
+        padding: 0;
+    }
+
+    .nav-header__list {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: normal;
+        display: flex;
+    }
+
+    .nav-header__item--contacts {
+        display: none;
+    }
+
+    .nav-header__item--search {
+        display: block;
+    }
+
+    .nav-header__item {
+        padding: 8px 15px;
+        margin: 0;
+        min-height: 40px;
+    }
+
 }
 
+@media (min-width: $desktop-width) {
+  
+}

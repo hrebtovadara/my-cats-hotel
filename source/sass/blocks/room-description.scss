@@ -37,3 +37,35 @@
 .room-description__button {
     margin-top: 8px;
 }
+
+@media (min-width: $tablet-width) {
+    .room-description {
+        width: 345px;
+        height: 266px;
+        padding: 40px;
+        margin: 0;
+    }
+
+    .room-description__item br {
+        display: none;
+    }
+
+    .room-description__list {
+        padding-top: 18px;
+        font-size: 14px;
+        padding-left: 19px;
+        line-height: 18px;
+    }
+
+    .room-description__button {
+        margin-top: 10px;
+    }
+    
+    .room-description__item {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  
+}

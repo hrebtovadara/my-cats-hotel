@@ -1,12 +1,12 @@
 .feedback-block {
     min-height: 230px;
     background-color: $color-white;
-    border-radius: 15px;
     font-size: 15px;
     line-height: 21px;
     padding: 21px 10px 25px 56px;
     font-family: "Rubik";
-    box-shadow: 0 0 16px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    border-radius: 8px;
 }
 
 .feedback-block__info {
@@ -24,4 +24,41 @@
     width: 21px;
     height: 22px;
     left: 40px;
+}
+
+
+@media (min-width: $tablet-width) {
+    .feedback-block {
+        min-height: 201px;
+        background-color: $color-white;
+        width: 442px;
+        font-size: 15px;
+        line-height: 21px;
+        padding: 35px 33px 35px 70px;
+        box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .feedback-block__text::before {
+        position: absolute;
+        content: " ";
+        background-image: url("../../img/sprite-quotes.svg");
+        background-repeat: no-repeat;
+        width: 27px;
+        height: 28px;
+    }
+
+    .feedback-block__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-autor;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  
 }

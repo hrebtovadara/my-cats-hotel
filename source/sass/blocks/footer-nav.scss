@@ -1,0 +1,22 @@
+.footer-nav__logo {
+    width: 46px;
+    height: 38px;
+}
+
+
+@media (min-width: $tablet-width) {
+    .footer-nav__logo {
+        width: 63px;
+        height: 52px;
+    }
+
+  .footer-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
+}

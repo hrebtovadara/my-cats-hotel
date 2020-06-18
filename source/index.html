@@ -12,17 +12,17 @@
 
 <body>
   <div class="general">
-    <header class="header header--with-js">
+    <header class="header header--no-js ">
       <div class="logo header__logo">
-        <img class="logo__image" src="img/logo-desktop.png">
+        <img class="logo__image" src="img/logo.svg">
       </div>
-      <nav class="nav-header header__nav visually-hidden">
+      <nav class="nav-header header__nav header--toggle">
         <ul class="nav-header__list">
           <li class="nav-header__item"><a href="index.html" class="nav-header__link">Почему мы?</a></li>
           <li class="nav-header__item"><a href="" class="nav-header__link">Номера</a></li>
           <li class="nav-header__item"><a href="" class="nav-header__link">Отзывы</a></li>
-          <li class="nav-header__item visually-hidden"><a href="" class="nav-header__link">Как нас найти</a></li>
-          <li class="nav-header__item"><a href="" class="nav-header__link">Контакты</a></li>
+          <li class="nav-header__item nav-header__item--search"><a href="" class="nav-header__link">Как нас найти</a></li>
+          <li class="nav-header__item nav-header__item--contacts"><a href="" class="nav-header__link">Контакты</a></li>
         </ul>
         <div class="header__contacts">
           <p class="header__contacts--number">8 (800) 333-55-99</p>
@@ -38,13 +38,13 @@
             </svg>
           </div>
         </div>
-        <button class="nav-header__button nav-header__button--close">
-          <svg class="nav-header__button--svg-close">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
       </nav>
-      <button class="nav-header__button nav-header__button--menu">
+      <button class="nav-header__button nav-header__button--close header--close">
+        <svg class="nav-header__button--svg-close">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="nav-header__button nav-header__button--menu header--close" >
         <svg class="nav-header__button--svg-menu">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
@@ -125,7 +125,12 @@
         <h3 class="rooms-container__title title-text">Номера</h3>
         <ul class="rooms-container-list rooms-list">
           <li class="rooms-list__item rooms-block">
-            <img class="rooms-block__image" src="img/room/econom-plus-slider.jpg">
+            <picture>
+              <source srcset="img/room/econom-plus-slider-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/room/econom-plus-slider-tablet.jpg" media="(min-width: 768px)">
+              <img class="rooms-block__image" src="img/room/econom-plus-slider-mobile.jpg">
+            </picture>
+         
             <div class="rooms-block__description room-description">
               <p class="room-description__title">Эконом плюс</p>
               <ul class="room-description__list">
@@ -137,7 +142,7 @@
             </div>
           </li>
           <li class="rooms-list__item rooms-block visually-hidden">
-            <img class="rooms-block__image">
+            <img class="rooms-block__image" src="img/room/comfort-slider-mobile.jpg">
             <div class="rooms-block__description room-description">
               <p class="room-description__title">Комфорт</p>
               <ul class="room-description__list">
@@ -149,7 +154,7 @@
             </div>
           </li>
           <li class="rooms-list__item rooms-block visually-hidden">
-            <img class="rooms-block__image">
+            <img class="rooms-block__image" src="img/room/seut-slider-mobile.jpg">
             <div class="rooms-block__description room-description">
               <p class="room-description__title">Сьют</p>
               <ul class="room-description__list">
@@ -161,29 +166,19 @@
             </div>
           </li>
         </ul>
-        <!-- подумать мб заменить на радиобаттон -->
-        <!-- <div class="rooms-container__slider slider">
-          <ul class="slider__list"></ul>
-            <li class="slider__item"><button class="slider__button slider__button--active"></button></li>
-            <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
-            <li class="slider__item"><button class="slider__button slider__button--inactive"></button></li>
-          </ul>
-        </div> -->
-
         <div class="rooms-container__slider slider">
           <ul class="slider__list">
             <li class="slider__item">
-              <input type="radio" class="slider__input slider__button--active" id="slider-one" name="slider-rooms"
-                checked>
-              <label for="slider-one" class="slider__label"></label>
+              <input type="radio" class="slider__input input-rooms" id="slider-rooms-one" name="slider-rooms" checked>
+              <label for="slider-rooms-one" class="slider__label"></label>
             </li>
             <li class="slider__item">
-              <input type="radio" class="slider__input slider__button--active" id="slider-two" name="slider-rooms">
-              <label for="slider-two" class="slider__label"></label>
+              <input type="radio" class="slider__input input-rooms" id="slider-rooms-two" name="slider-rooms">
+              <label for="slider-rooms-two" class="slider__label"></label>
             </li>
             <li class="slider__item">
-              <input type="radio" class="slider__input slider__button--active" id="slider-three" name="slider-rooms">
-              <label for="slider-three" class="slider__label"></label>
+              <input type="radio" class="slider__input input-rooms" id="slider-rooms-three" name="slider-rooms">
+              <label for="slider-rooms-three" class="slider__label"></label>
             </li>
           </ul>
         </div>
@@ -263,15 +258,15 @@
             <li class="address__item">
               <p class="address__item--label">Социальные сети</p>
               <div class="address__item--icons social-icon">
-                <svg class="social-icon__item">
-                  <use xlink:href="img/sprite.svg#icon-fb"></use>
-                </svg>
-                <svg class="social-icon__item">
-                  <use xlink:href="img/sprite.svg#icon-inst"></use>
-                </svg>
-                <svg class="social-icon__item">
-                  <use xlink:href="img/sprite.svg#icon-vk"></use>
-                </svg>
+                <a href="#"><svg class="social-icon__item">
+                    <use xlink:href="img/sprite.svg#icon-fb"></use>
+                  </svg></a>
+                <a href="#"><svg class="social-icon__item">
+                    <use xlink:href="img/sprite.svg#icon-inst"></use>
+                  </svg></a>
+                <a href="#"><svg class="social-icon__item">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg></a>
               </div>
             </li>
           </ul>
@@ -282,7 +277,6 @@
             <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=44.991843%2C53.154254&sspn=0.061626%2C0.020070&utm_medium=mapframe&utm_source=maps&z=17.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a> -->
             <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
           </div>
-          <img>
         </div>
       </div>
       <div class="footer__nav footer-nav">
@@ -313,30 +307,49 @@
   let headerNav = document.querySelector(".header__nav");
   let navButton = document.querySelector(".nav-header__button--menu");
 
+  header.classList.add("header--with-js");
+
   closeButton.onclick = function () {
     header.classList.toggle("header--with-js");
-    headerNav.classList.toggle("visually-hidden");
+    headerNav.classList.toggle("header--toggle");
     navButton.classList.toggle("visually-hidden");
+    closeButton.classList.toggle("header--close");
   }
 
   navButton.onclick = function () {
     header.classList.toggle("header--with-js");
-    headerNav.classList.toggle("visually-hidden");
+    headerNav.classList.toggle("header--toggle");
     navButton.classList.toggle("visually-hidden");
+    closeButton.classList.toggle("header--close");
   }
+ 
+  
+
+  let roomsBlockArr = document.querySelectorAll(".rooms-block");
+  let roomsInputArr = document.querySelectorAll(".input-rooms");
+
+  for (let i = 0; i < roomsInputArr.length; i++) {
+    roomsInputArr[i].addEventListener("click", function () {
+      for (block of roomsBlockArr) {
+        block.classList.add("visually-hidden");
+      }
+      roomsBlockArr[i].classList.remove("visually-hidden");
+    })
+  }
+
 
   let feedbackBlockArr = document.querySelectorAll(".feedback-block");
   let feedbackInputArr = document.querySelectorAll(".input-feedback");
 
   for (let i = 0; i < feedbackInputArr.length; i++) {
-    feedbackInputArr[i].addEventListener("click", function() {
-      for(block of feedbackBlockArr) {
+    feedbackInputArr[i].addEventListener("click", function () {
+      for (block of feedbackBlockArr) {
         block.classList.add("visually-hidden");
       }
       feedbackBlockArr[i].classList.remove("visually-hidden");
     })
   }
-         
+
 </script>
 
 </html>

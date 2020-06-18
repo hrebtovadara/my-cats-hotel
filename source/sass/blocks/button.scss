@@ -12,14 +12,31 @@
 .button--white {
     background-color: $color-white;
     min-width: 206px;
-    height: 50px;
+    height: 52px;
+    border: 2px solid transparent;
+}
+
+.button--white:hover {
+    cursor: pointer;
+    border: 2px solid $color-block;
+}
+
+.button--orange:hover {
+    cursor: pointer;
+    border: 2px solid $color-block;
+}
+
+.button--orange:active,
+.button--white:active {
+    opacity: .8;
 }
 
 .button--orange {
     background-color: $color-button-orange;
     color: $color-white;
     min-width: 240px;
-    height: 50px;
+    height: 52px;
+    border: 2px solid transparent;
 }
 
 .button--white::before {
@@ -29,7 +46,7 @@
     height: 36px;
     font-size: 16px;
     line-height: 19px;
-    top: 7px;
+    top: 6px;
     right: 7px;
     background-color: $color-button-orange;
     border-radius: 50px;
@@ -41,7 +58,7 @@
     height: 36px;
     font-size: 16px;
     line-height: 19px;
-    top: 7px;
+    top: 6px;
     right: 7px;
     background-color: $color-white;
     border-radius: 50px;
@@ -52,7 +69,7 @@
     content: "";
     width: 36px;
     height: 36px;
-    top: 16px;
+    top: 15px;
     right: -1px;
     background-image: url("../../img/icon-paw.svg");
     background-repeat: no-repeat;
@@ -63,8 +80,17 @@
     content: "";
     width: 36px;
     height: 36px;
-    top: 16px;
+    top: 15px;
     right: -1px;
     background-image: url("../../img/icon-button-paw-orange.svg");
     background-repeat: no-repeat;
+}
+
+
+@media (min-width: $tablet-width) {
+  
+}
+
+@media (min-width: $desktop-width) {
+  
 }

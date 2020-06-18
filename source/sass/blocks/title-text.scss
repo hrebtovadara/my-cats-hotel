@@ -6,3 +6,14 @@
     align-items: center;
     text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+    .title-text {
+        font-size: 36px;
+        line-height: 43px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  
+}

@@ -9,3 +9,21 @@
     height: 300px;
     border: none;
 }
+
+
+@media (min-width: $tablet-width) {
+    .footer-map {
+        width: 399px;
+        height: 552px;
+    }
+    .footer-map__iframe {
+        width: 399px;
+        height: 552px;
+        
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+  
+}

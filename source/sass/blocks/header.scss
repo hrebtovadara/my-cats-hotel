@@ -6,9 +6,25 @@
     padding: 12px 15px;
 }
 
-.header--with-js {
-    height: 62px;
-    background-color: $color-white;
+@media (max-width: $mobile-width-only) {
+   
+    .header--with-js {
+        height: 62px;
+        background-color: $color-white;
+    }
+    
+    
+    .header--with-js .header--toggle {
+        display: none;
+    }
+
+    .header--with-js .nav-header__button--menu {
+        display: block;
+    }
+}
+
+.header--close {
+    display:none;
 }
 
 .header__contacts--number {
@@ -21,4 +37,25 @@
 
 .header__contacts--number {
     padding: 20px 0 20px ;
+}
+
+@media (min-width: $tablet-width) {
+    .header {
+        height: 76px;
+        background-color: $color-white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        padding: 12px 45px;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  
 }

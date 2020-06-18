@@ -6,3 +6,18 @@
     font-size: 12px;
     line-height: 14px;
 }
+
+
+@media (min-width: $tablet-width) {
+    .footer-confidentiality {
+        min-height: 49px;
+        padding: 0 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: $desktop-width) {
+  
+}

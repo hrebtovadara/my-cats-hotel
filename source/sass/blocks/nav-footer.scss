@@ -17,3 +17,31 @@
 .nav-footer__item a {
     color: $color-font;
 }
+
+
+@media (min-width: $tablet-width) {
+    .nav-footer__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 0;
+        padding-top: 0;
+    }
+
+    .nav-footer__item {
+        margin-left: 30px;
+        padding: 0;
+        width: auto;
+        
+    }
+
+    .nav-footer__item:hover {
+        border-bottom: 1px solid $color-font;
+        margin-bottom: -1px;
+        
+    }
+}
+
+@media (min-width: $desktop-width) {
+  
+}

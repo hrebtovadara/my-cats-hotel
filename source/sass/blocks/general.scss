@@ -8,3 +8,17 @@
     // box-shadow: 0 0 10px rgba(0,0,0,0.5);
     // background-color: blue;
 }
+
+@media (min-width: $tablet-width) {
+    .general {
+        width: 768px;
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+    .general {
+        width: 1170px;
+    }
+    
+}
