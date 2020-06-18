@@ -1,6 +1,8 @@
 .feedback-container {
   padding: 34px 0 54px;
-
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .feedback-container__title {
@@ -10,4 +12,54 @@
 
 .feedback-container__slider {
     padding: 10px 0;
+}
+
+.feedback-container::after {
+  position: absolute;
+  content:  " ";
+  background-image: url("../img/fon-paw.svg");
+  background-size: contain;
+  display: block;
+  opacity: .15;
+  width: 116px;
+  height: 99px;
+  z-index: -1;
+  top: 50px;
+  right: -30px;
+  transform: rotate(-30deg);
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-container {
+      padding: 110px 0 110px;
+  }
+  
+  .feedback-container::after {
+      width: 227px;
+      height: 194px;
+      top: 10px;
+      right: -30px;
+  }
+
+  .feedback-container__title {
+      margin: 0;
+      padding: 0px 0 35px;
+  }
+
+  .feedback-container__slider {
+      margin-top: 40px;
+      padding-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback-container {
+      padding: 140px 0 150px;
+  }
+
+  .feedback-container__title {
+      margin: 0;
+      padding: 0px 0 50px;
+  }
 }

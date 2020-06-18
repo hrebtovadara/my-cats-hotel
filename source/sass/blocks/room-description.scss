@@ -2,6 +2,7 @@
     min-height: 252px;
     padding: 20px 25px;
     margin: 0;
+    background-color: $color-white;
 }
 
 .room-description__title {
@@ -44,6 +45,8 @@
         height: 266px;
         padding: 40px;
         margin: 0;
+        box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+        border-radius: 8px;
     }
 
     .room-description__item br {
@@ -67,5 +70,29 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+    .room-description {
+        width: 500px;
+        height: 284px;
+        padding: 40px 100px;
+        margin: 0;
+    }
+
+    .room-description__item br {
+        display: none;
+    }
+
+    .room-description__list {
+        padding-top: 18px;
+        font-size: 14px;
+        padding-left: 19px;
+        line-height: 18px;
+    }
+
+    .room-description__button {
+        margin-top: 10px;
+    }
+    
+    .room-description__item {
+        margin-bottom: 10px;
+    }
 }

@@ -37,7 +37,7 @@
         background-image: url("../../img/fons/cat-fon-tablet.png");
         min-height: 868px;
         margin: 0;
-        padding: 140px 200px;
+        padding: 138px 200px;
         text-align: center;
         position: relative;
         z-index: 0;
@@ -68,6 +68,10 @@
     .banner__text--sity {
         font-size: 14px;
         line-height: 17px;
+    }
+
+    .banner__button {
+        margin-top: 38px;
     }
 }
 

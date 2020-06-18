@@ -4,25 +4,40 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer__address {
-      display: flex;
-      height: 552px;
-  }
+    .footer__address {
+        display: flex;
+        height: 552px;
+    }
 
-  .footer__address--text {
-      width: 369px;
-  }
+    .footer__address--text {
+        width: 369px;
+    }
 
-  .footer__address--map {
-      width: 399px;
-  }
+    .footer__address--map {
+        width: 399px;
+    }
 
-  .footer__nav {
-    padding: 0 45px;
-    min-height: 76px;
-}
+    .footer__nav {
+        padding: 0 45px;
+        min-height: 76px;
+    }
 }
 
 @media (min-width: $desktop-width) {
+    .footer__address {
+        height: 580px;
+    }
   
+    .footer__address--text {
+        width: 568px;
+    }
+  
+    .footer__address--map {
+        width: 798px;
+    }
+  
+    .footer__nav {
+      padding: 0 198px;
+      min-height: 76px;
+    }
 }

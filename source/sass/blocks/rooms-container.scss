@@ -13,6 +13,7 @@
     position: absolute;
     content:  " ";
     background-image: url("../img/fon-fish.svg");
+    background-size: contain;
     display: block;
     opacity: .15;
     width: 150px;
@@ -20,9 +21,51 @@
     z-index: -1;
     top: 30px;
     left: 0px;   
+    background-repeat: no-repeat;
 }
 
 .rooms-container__slider {
     margin: 0;
     padding: 10px 0;
+}
+
+
+@media (min-width: $tablet-width) {
+    .rooms-container {
+        padding-top: 80px;
+    }
+
+    .rooms-container__title {
+        padding: 0 0 35px;
+    }
+    
+    .rooms-container::after {
+        width: 339px;
+        height: 105px;
+        top: 30px;
+        left: 0px;   
+    }
+
+    .rooms-container__slider {
+        margin: 0;
+        margin-top: 40px;
+        padding: 10px 0 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .rooms-container::after {
+        width: 484px;
+        height: 151px;
+        top: 100px;
+        left: 0px;   
+    }
+
+    .rooms-container {
+        padding-top: 90px;
+    }
+
+    .rooms-container__title {
+        padding: 0 0 45px;
+    }
 }

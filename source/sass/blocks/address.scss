@@ -44,5 +44,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+    .address {
+        padding: 60px 111px 70px 198px;
+    }
+
+    .address__list {
+        padding: 40px 0 0;
+    }
+
+    .address__item {
+        margin-bottom: 30px;
+    }
 }

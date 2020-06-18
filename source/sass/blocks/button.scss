@@ -88,9 +88,15 @@
 
 
 @media (min-width: $tablet-width) {
-  
+    .button--orange {
+        min-width: 206px;
+    }
 }
 
 @media (min-width: $desktop-width) {
-  
+    .button--orange {
+        min-width: 206px;
+        height: 52px;
+    }
+    
 }

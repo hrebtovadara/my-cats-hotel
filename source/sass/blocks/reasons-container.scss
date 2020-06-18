@@ -15,6 +15,7 @@
     position: absolute;
     content:  " ";
     background-image: url("../img/fon-paw.svg");
+    background-size: contain;
     display: block;
     opacity: .15;
     width: 116px;
@@ -23,4 +24,43 @@
     top: 20px;
     right: -30px;
     transform: rotate(30deg);
-   }
+    background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+    .reasons-container {
+        padding: 110px 0 0px;
+    }
+    
+    .reasons-container::after {
+        width: 300px;
+        height: 257px;
+        top: 20px;
+        right: -90px;
+        transform: rotate(30deg);
+    }
+
+    .reasons-container__title {
+        padding: 0;
+        padding-bottom: 56px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .reasons-container {
+        padding: 130px 0 0px;
+    }
+
+    .reasons-container::after {
+        width: 367px;
+        height: 314px;
+        top: 30px;
+        right: -70px;
+        transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
+    }
+      
+    .reasons-container__title {
+        padding: 0;
+        padding-bottom: 66px;
+    }
+}
