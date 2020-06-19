@@ -38,8 +38,9 @@
   .feedback-container::after {
       width: 227px;
       height: 194px;
-      top: 10px;
-      right: -30px;
+      top: 50px;
+      right: -20px;
+      transform: matrix(-0.79, 0.62, 0.62, 0.79, 0, 0);
   }
 
   .feedback-container__title {
@@ -62,4 +63,11 @@
       margin: 0;
       padding: 0px 0 50px;
   }
+  
+  .feedback-container::after {
+    width: 312px;
+    height: 267px;
+    top: 45px;
+    right: -45px;
+}
 }
