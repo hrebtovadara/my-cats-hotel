@@ -1,0 +1,23 @@
+
+.switch__slider {
+    padding: 10px 0;
+}
+
+@media (min-width: $tablet-width) {
+    .switch__slider {
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .switch {
+        position: relative;
+    }
+
+    .switch__button {
+        position: absolute;
+        right: 70px;
+        top: 0;
+    }
+}

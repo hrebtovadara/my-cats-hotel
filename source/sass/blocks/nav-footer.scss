@@ -24,7 +24,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        margin: 0;
         padding-top: 0;
     }
 
@@ -38,7 +37,6 @@
     .nav-footer__item:hover {
         border-bottom: 1px solid $color-font;
         margin-bottom: -1px;
-        
     }
 }
 

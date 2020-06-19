@@ -10,10 +10,6 @@
     padding: 20px 0;
 }
 
-.feedback-container__slider {
-    padding: 10px 0;
-}
-
 .feedback-container::after {
   position: absolute;
   content:  " ";
@@ -47,11 +43,6 @@
       margin: 0;
       padding: 0px 0 35px;
   }
-
-  .feedback-container__slider {
-      margin-top: 40px;
-      padding-bottom: 0;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -65,9 +56,9 @@
   }
   
   .feedback-container::after {
-    width: 312px;
-    height: 267px;
-    top: 45px;
-    right: -45px;
-}
+        width: 312px;
+        height: 267px;
+        top: 45px;
+        right: -45px;
+   }
 }

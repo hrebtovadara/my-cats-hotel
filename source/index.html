@@ -21,7 +21,8 @@
           <li class="nav-header__item"><a href="index.html" class="nav-header__link">Почему мы?</a></li>
           <li class="nav-header__item"><a href="" class="nav-header__link">Номера</a></li>
           <li class="nav-header__item"><a href="" class="nav-header__link">Отзывы</a></li>
-          <li class="nav-header__item nav-header__item--search"><a href="" class="nav-header__link">Как нас найти</a></li>
+          <li class="nav-header__item nav-header__item--search"><a href="" class="nav-header__link">Как нас найти</a>
+          </li>
           <li class="nav-header__item nav-header__item--contacts"><a href="" class="nav-header__link">Контакты</a></li>
         </ul>
         <div class="header__contacts">
@@ -44,7 +45,7 @@
           <use xlink:href="img/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <button class="nav-header__button nav-header__button--menu header--close" >
+      <button class="nav-header__button nav-header__button--menu header--close">
         <svg class="nav-header__button--svg-menu">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
@@ -126,7 +127,8 @@
         <ul class="rooms-container__list">
           <li class="rooms-container__item rooms-block">
             <picture>
-              <source srcset="img/room/econom-plus-slider-desktop.jpg" media="(min-width: 1360px)"> <!--исправить-->
+              <source srcset="img/room/econom-plus-slider-desktop.jpg" media="(min-width: 1360px)">
+              <!--исправить-->
               <source srcset="img/room/econom-plus-slider-tablet.jpg" media="(min-width: 768px)">
               <img class="rooms-block__image" src="img/room/econom-plus-slider-mobile.jpg">
             </picture>
@@ -213,23 +215,34 @@
             </div>
           </li>
         </ul>
-        <div class="feedback-container__slider slider">
-          <ul class="slider__list">
-            <li class="slider__item">
-              <input type="radio" class="slider__input input-feedback" id="slider-feedback-one" name="slider-feedback"
-                checked>
-              <label for="slider-feedback-one" class="slider__label"></label>
-            </li>
-            <li class="slider__item">
-              <input type="radio" class="slider__input input-feedback" id="slider-feedback-two" name="slider-feedback">
-              <label for="slider-feedback-two" class="slider__label"></label>
-            </li>
-            <li class="slider__item">
-              <input type="radio" class="slider__input input-feedback" id="slider-feedback-three"
-                name="slider-feedback">
-              <label for="slider-feedback-three" class="slider__label"></label>
-            </li>
-          </ul>
+        <div class="feedback-container__switch switch">
+          <div class="switch__slider slider">
+            <ul class="slider__list">
+              <li class="slider__item">
+                <input type="radio" class="slider__input input-feedback" id="slider-feedback-one" name="slider-feedback"
+                  checked>
+                <label for="slider-feedback-one" class="slider__label"></label>
+              </li>
+              <li class="slider__item">
+                <input type="radio" class="slider__input input-feedback" id="slider-feedback-two"
+                  name="slider-feedback">
+                <label for="slider-feedback-two" class="slider__label"></label>
+              </li>
+              <li class="slider__item">
+                <input type="radio" class="slider__input input-feedback" id="slider-feedback-three"
+                  name="slider-feedback">
+                <label for="slider-feedback-three" class="slider__label"></label>
+              </li>
+            </ul>
+          </div>
+          <div class="switch__button button-arrow">
+            <button class="button-arrow__item button-arrow__item--left">
+              <img src="img/arrow/icon-arrow-left-orange.svg" alt="">
+            </button>
+            <button class="button-arrow__item button-arrow__item--right">
+              <img src="img/arrow/icon-arrow-right-orange.svg" alt="">
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -321,8 +334,8 @@
     navButton.classList.toggle("visually-hidden");
     closeButton.classList.toggle("header--close");
   }
- 
-  
+
+
 
   let roomsBlockArr = document.querySelectorAll(".rooms-block");
   let roomsInputArr = document.querySelectorAll(".input-rooms");
