@@ -14,21 +14,7 @@
     border: 2px solid transparent;
     height: 52px;
     min-width: 206px;
-}
-
-.button--white:hover {
-    border: 2px solid $color-block;
-    cursor: pointer;
-}
-
-.button--orange:hover {
-    border: 2px solid $color-block;
-    cursor: pointer;
-}
-
-.button--orange:active,
-.button--white:active {
-    opacity: 0.8;
+    color: $color-font;
 }
 
 .button--orange {
@@ -37,6 +23,26 @@
     color: $color-white;
     height: 52px;
     min-width: 240px;
+}
+
+.button--white:hover {
+    cursor: pointer;
+    color: $color-font;
+}
+
+.button--orange:hover {
+    cursor: pointer;
+    color: $color-white;
+}
+
+.button--white:active {
+    opacity: 0.8;
+    color: $color-font;
+}
+
+.button--orange:active {
+    opacity: 0.8;
+    color: $color-white;
 }
 
 .button--white::before {
@@ -50,6 +56,10 @@
     right: 7px;
     top: 6px;
     width: 36px;
+}
+
+.button:hover::before {
+   opacity: .5;
 }
 
 .button--orange::before {
@@ -71,7 +81,7 @@
     content: '';
     height: 36px;
     position: absolute;
-    right: -1px;
+    right: 0px;
     top: 15px;
     width: 36px;
 }
@@ -82,7 +92,7 @@
     content: '';
     height: 36px;
     position: absolute;
-    right: -1px;
+    right: 0px;
     top: 15px;
     width: 36px;
 }
