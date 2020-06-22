@@ -1,8 +1,8 @@
 .reasons-container {
     margin: 0;
+    overflow: hidden;
     padding: 45px 0 0;
     position: relative;
-    overflow: hidden;
     z-index: 2;
 }
 
@@ -12,32 +12,32 @@
 }
 
 .reasons-container::after {
-    position: absolute;
-    content:  " ";
-    background-image: url("../img/fon-paw.svg");
-    background-size: contain;
-    display: block;
-    opacity: .15;
-    width: 116px;
-    height: 99px;
-    z-index: -1;
-    top: 20px;
-    right: -30px;
-    transform: rotate(30deg);
+    background-image: url('../img/fon-paw.svg');
     background-repeat: no-repeat;
+    background-size: contain;
+    content: ' ';
+    display: block;
+    height: 99px;
+    opacity: 0.15;
+    position: absolute;
+    right: -30px;
+    top: 20px;
+    transform: rotate(30deg);
+    width: 116px;
+    z-index: -1;
 }
 
 @media (min-width: $tablet-width) {
     .reasons-container {
-        padding: 110px 0 0px;
+        padding: 110px 0 0;
     }
     
     .reasons-container::after {
-        width: 300px;
         height: 257px;
-        top: 20px;
         right: -90px;
+        top: 20px;
         transform: rotate(30deg);
+        width: 300px;
     }
 
     .reasons-container__title {
@@ -48,15 +48,15 @@
 
 @media (min-width: $desktop-width) {
     .reasons-container {
-        padding: 130px 0 0px;
+        padding: 130px 0 0;
     }
 
     .reasons-container::after {
-        width: 367px;
         height: 314px;
-        top: 30px;
         right: -70px;
+        top: 30px;
         transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
+        width: 367px;
     }
       
     .reasons-container__title {

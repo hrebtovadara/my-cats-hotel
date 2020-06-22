@@ -1,11 +1,11 @@
 
 @media (min-width: $tablet-width) {
-  .reasons-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 0;
-  }
+    .reasons-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+    }
 }
 
 @media (min-width: $desktop-width) {

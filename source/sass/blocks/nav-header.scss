@@ -8,18 +8,18 @@
 }
 
 .nav-header__list {
-    font-family: "Rubik", sans-serif;
+    color: $color-font;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: $color-font;
-    position: relative;
     margin: 0;
+    position: relative;
 }
 
 .nav-header__item {
-    padding: 8px 15px;
     margin: 0 -15px;
     min-height: 40px;
+    padding: 8px 15px;
 }
 
 .nav-header__item:hover {
@@ -27,22 +27,22 @@
 }
 
 .nav-header__button {
-    position: absolute;
-    list-style: none;
-    border: none;
     background-color: transparent;
-    top: 0px;
-    right: 0px;
+    border: none;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .nav-header__button--svg-close {
-    width: 14px;
     height: 14px;
+    width: 14px;
 }
 
 .nav-header__button--svg-menu {
-    width: 22px;
     height: 14px;
+    width: 22px;
 }
 
 .nav-header__button--menu {
@@ -54,24 +54,24 @@
 }
 
 .nav-header__button--menu:hover {
-    margin-top: -0px;
-    margin-right: 0px;
-    width: 62px;
-    height: 62px;
     background-color: $color-block;
+    height: 62px;
+    margin-right: 0;
+    margin-top: 0;
+    width: 62px;
 }
 
 .nav-header__button--close:hover {
-    margin-top: -0px;
-    margin-right: 0px;
-    width: 64px;
-    height: 62px;
     background-color: $color-image-item;
-   }
+    height: 62px;
+    margin-right: 0;
+    margin-top: 0;
+    width: 64px;
+}
 
-   .nav-header__item--search {
-       display: none;
-   }
+.nav-header__item--search {
+    display: none;
+}
 
 @media (min-width: $tablet-width) {
     .nav-header {
@@ -80,11 +80,11 @@
     }
 
     .nav-header__list {
-        font-size: 16px;
-        line-height: 19px;
-        font-weight: normal;
-        display: flex;
         align-items: center;
+        display: flex;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 19px;
     }
 
     .nav-header__item--contacts {
@@ -96,9 +96,9 @@
     }
 
     .nav-header__item {
-        padding: 12px 15px 8px;
         margin: 0;
         min-height: 40px;
+        padding: 12px 15px 8px;
     }
 
 }

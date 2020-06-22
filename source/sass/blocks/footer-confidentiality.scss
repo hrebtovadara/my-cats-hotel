@@ -1,20 +1,20 @@
 .footer-confidentiality {
-    min-height: 80px;
     border-top: 1px solid $color-line;
-    padding: 0 15px;
     color: $color-font-footer;
     font-size: 12px;
     line-height: 14px;
+    min-height: 80px;
+    padding: 0 15px;
 }
 
 
 @media (min-width: $tablet-width) {
     .footer-confidentiality {
-        min-height: 49px;
-        padding: 0 45px;
+        align-items: center;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        min-height: 49px;
+        padding: 0 45px;
     }
 }
 

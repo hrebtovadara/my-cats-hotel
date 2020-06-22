@@ -1,32 +1,31 @@
 .header {
-    height: 370px;
-    width: 320px;
     background-color: $color-block;
+    height: 370px;
     margin: 0;
     padding: 12px 15px;
+    width: 320px;
 }
 
 .header--close {
-    display:none;
+    display: none;
 }
 
 .header__contacts--number {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
+    font-style: normal;
     line-height: 19px;
     margin: 0;
 }
 
 .header__contacts--number {
-    padding: 20px 0 20px ;
+    padding: 20px 0;
 }
 
 @media (max-width: $mobile-width-only) {
-   
     .header--with-js {
-        height: 62px;
         background-color: $color-white;
+        height: 62px;
     }
     
     .header--with-js .header--toggle {
@@ -40,14 +39,14 @@
 
 @media (min-width: $tablet-width) {
     .header {
-        height: 76px;
+        align-items: center;
         background-color: $color-white;
         display: flex;
+        height: 76px;
         justify-content: space-between;
-        align-items: center;
         margin: 0;
-        width: 100%;
         padding: 12px 30px 12px 45px;
+        width: 100%;
     }
 
     .header__contacts {

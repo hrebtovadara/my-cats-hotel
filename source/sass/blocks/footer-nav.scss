@@ -1,18 +1,18 @@
 .footer-nav__logo {
-    width: 46px;
     height: 38px;
+    width: 46px;
 }
 
 
 @media (min-width: $tablet-width) {
     .footer-nav__logo {
-        width: 63px;
         height: 52px;
+        width: 63px;
     }
 
     .footer-nav {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: space-between;
     }
 }

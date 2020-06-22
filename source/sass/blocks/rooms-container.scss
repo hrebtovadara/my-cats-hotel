@@ -1,7 +1,7 @@
 .rooms-container {
+    padding-top: 10px;
     position: relative;
     z-index: 2;
-    padding-top: 10px;
 }
 
 .rooms-container__title {
@@ -10,18 +10,18 @@
 }
 
 .rooms-container::after {
-    position: absolute;
-    content:  " ";
-    background-image: url("../img/fon-fish.svg");
-    background-size: contain;
-    display: block;
-    opacity: .15;
-    width: 150px;
-    height: 46px;
-    z-index: -1;
-    top: 30px;
-    left: 0px;   
+    background-image: url('../img/fon-fish.svg');
     background-repeat: no-repeat;
+    background-size: contain;
+    content: ' ';
+    display: block;
+    height: 46px;
+    left: 0;
+    opacity: 0.15;
+    position: absolute;
+    top: 30px;
+    width: 150px;
+    z-index: -1;
 }
 
 .rooms-container__slider {
@@ -40,10 +40,10 @@
     }
     
     .rooms-container::after {
-        width: 339px;
         height: 105px;
+        left: 0;
         top: 120px;
-        left: 0px;   
+        width: 339px;   
     }
 
     .rooms-container__slider {
@@ -55,10 +55,10 @@
 
 @media (min-width: $desktop-width) {
     .rooms-container::after {
-        width: 484px;
         height: 151px;
+        left: 0;
         top: 100px;
-        left: 0px;   
+        width: 484px;   
     }
 
     .rooms-container {

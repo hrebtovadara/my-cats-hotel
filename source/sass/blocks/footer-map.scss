@@ -1,20 +1,20 @@
 .footer-map__iframe {
-    width: 320px;
-    height: 300px;
     border: none;
+    height: 300px;
+    width: 320px;
 }
 
 @media (min-width: $tablet-width) {
     .footer-map__iframe {
-        width: 399px;
         height: 552px;
+        width: 399px;
         
     }
 }
 
 @media (min-width: $desktop-width) {
     .footer-map__iframe {
-        width: 798px;
         height: 580px;
+        width: 798px;
     }
 }

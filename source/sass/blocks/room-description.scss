@@ -1,22 +1,22 @@
 .room-description {
+    background-color: $color-white;
+    margin: 0;
     min-height: 252px;
     padding: 20px 25px;
-    margin: 0;
-    background-color: $color-white;
 }
 
 .room-description__title {
-    font-family: "Rubik", sans-serif;
-    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
+    font-weight: bold;
     line-height: 24px;
     margin: 0;
 }
 
 .room-description__list {
-    padding-top: 20px;
     font-size: 15px;
     padding-left: 19px;
+    padding-top: 20px;
 }
 
 .room-description__item {
@@ -25,14 +25,14 @@
 }
 
 .room-description__item::before {
-    position: absolute;
-    content: " ";
     background-color: $color-block;
-    width: 11px;
-    height: 11px;
     border-radius: 50%;
-    top: 3px;
+    content: ' ';
+    height: 11px;
     left: -19px;
+    position: absolute;
+    top: 3px;
+    width: 11px;
 }
 
 .room-description__button {
@@ -41,15 +41,15 @@
 
 @media (min-width: $tablet-width) {
     .room-description {
-        width: 345px;
+        border-radius: 8px;
+        box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
         height: 266px;
         padding: 40px;
-        box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
-        border-radius: 8px;
+        width: 345px;
     }
 
     .room-description:hover {
-        box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.7);
+        box-shadow: 0 0 25px rgba(208, 208, 208, 0.7);
     }
 
 
@@ -58,10 +58,10 @@
     }
 
     .room-description__list {
-        padding-top: 18px;
         font-size: 14px;
-        padding-left: 19px;
         line-height: 18px;
+        padding-left: 19px;
+        padding-top: 18px;
     }
 
     .room-description__button {
@@ -75,9 +75,9 @@
 
 @media (min-width: $desktop-width) {
     .room-description {
-        width: 500px;
         height: 284px;
         padding: 40px 100px;
+        width: 500px;
     }
 
     .room-description__item br {
@@ -85,10 +85,10 @@
     }
 
     .room-description__list {
-        padding-top: 20px;
         font-size: 14px;
-        padding-left: 19px;
         line-height: 18px;
+        padding-left: 19px;
+        padding-top: 20px;
     }
 
     .room-description__button {
