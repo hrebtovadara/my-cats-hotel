@@ -5,16 +5,13 @@
     padding: 0;
     position: relative;
     width: 320px;
-}
 
-@media (min-width: $tablet-width) {
-    .general {
+    @media (min-width: $tablet-width) {
         width: 768px;
     }
-}
 
-@media (min-width: $desktop-width) {
-    .general {
+    @media (min-width: $desktop-width) {
         width: 1366px;
     }
 }
+

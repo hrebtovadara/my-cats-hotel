@@ -5,21 +5,17 @@
     line-height: 14px;
     min-height: 80px;
     padding: 0 15px;
-}
 
-
-@media (min-width: $tablet-width) {
-    .footer-confidentiality {
+    @media (min-width: $tablet-width) {
         align-items: center;
         display: flex;
         justify-content: space-between;
         min-height: 49px;
         padding: 0 45px;
     }
-}
 
-@media (min-width: $desktop-width) {
-    .footer-confidentiality {
+    @media (min-width: $desktop-width) {
         padding: 0 198px;
     }
 }
+

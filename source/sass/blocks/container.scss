@@ -1,19 +1,13 @@
 .container {
     padding-left: 15px;
     padding-right: 15px;
-}
 
-
-@media (min-width: $tablet-width) {
-    .container {
+    @media (min-width: $tablet-width) {
         padding-left: 45px;
         padding-right: 45px;
     }
-    
-}
 
-@media (min-width: $desktop-width) {
-    .container {
+    @media (min-width: $desktop-width) {
         padding-left: 98px;
         padding-right: 98px;
     }

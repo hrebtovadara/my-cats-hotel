@@ -3,20 +3,17 @@
     width: 46px;
 }
 
-
 @media (min-width: $tablet-width) {
-    .footer-nav__logo {
-        height: 52px;
-        width: 63px;
-    }
-
+    
     .footer-nav {
         align-items: center;
         display: flex;
         justify-content: space-between;
+
+        &__logo {
+            height: 52px;
+            width: 63px;
+        }
     }
 }
 
-@media (min-width: $desktop-width) {
-  
-}

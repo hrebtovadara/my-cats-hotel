@@ -7,25 +7,24 @@
     line-height: 21px;
     min-height: 230px;
     padding: 21px 10px 25px 56px;
-}
 
-.feedback-block__info {
-    display: none;
-}
+    &__info {
+        display: none;
+    }
 
-.feedback-block__text {
-    margin: 0;
-}
+    &__text {
+        margin: 0;
 
-.feedback-block__text::before {
-    background-image: url('../../img/sprite-quotes.svg');
-    content: ' ';
-    height: 22px;
-    left: 40px;
-    position: absolute;
-    width: 21px;
+        &::before {
+            background-image: url('../../img/sprite-quotes.svg');
+            content: ' ';
+            height: 22px;
+            left: 40px;
+            position: absolute;
+            width: 21px;
+        }
+    }
 }
-
 
 @media (min-width: $tablet-width) {
     .feedback-block {
@@ -38,26 +37,26 @@
         padding: 35px 33px 35px 70px;
         position: relative;
         width: 442px;
-    }
 
-    .feedback-block__text::before {
-        background-repeat: no-repeat;
-        height: 28px;
-        width: 27px;
-    }
+        &__text::before {
+            background-repeat: no-repeat;
+            height: 28px;
+            width: 27px;
+        }
 
-    .feedback-block__info {
-        align-items: center;
-        color: $color-autor;
-        display: flex;
-        font-size: 14px;
-        justify-content: space-between;
-        line-height: 17px;
-        margin-top: 15px;
-    }
+        &__info {
+            align-items: center;
+            color: $color-autor;
+            display: flex;
+            font-size: 14px;
+            justify-content: space-between;
+            line-height: 17px;
+            margin-top: 15px;
 
-    .feedback-block__info--autor {
-        margin: 0;
+            &--autor {
+                margin: 0;
+            }
+        }
     }
 }
 

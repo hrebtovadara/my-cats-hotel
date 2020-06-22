@@ -5,15 +5,15 @@
 @media (min-width: $desktop-width) {
     .button-arrow {
         display: block;
-    }
 
-    .button-arrow__item {
-        background-color: $color-white;
-        background-repeat: no-repeat;
-        border: none;
-        border-radius: 50%;
-        box-shadow: 0 2px 12px rgba(173, 152, 143, 0.25);
-        height: 36px;
-        width: 36px;
-    }    
+        &__item {
+            background-color: $color-white;
+            background-repeat: no-repeat;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 2px 12px rgba(173, 152, 143, 0.25);
+            height: 36px;
+            width: 36px;
+        } 
+    }   
 }

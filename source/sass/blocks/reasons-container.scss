@@ -4,63 +4,63 @@
     padding: 45px 0 0;
     position: relative;
     z-index: 2;
-}
 
-.reasons-container__title {
-    margin: 0;
-    padding: 20px 0;
-}
+    &__title {
+        margin: 0;
+        padding: 20px 0;
+    }
 
-.reasons-container::after {
-    background-image: url('../img/fon-paw.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: ' ';
-    display: block;
-    height: 99px;
-    opacity: 0.15;
-    position: absolute;
-    right: -30px;
-    top: 20px;
-    transform: rotate(30deg);
-    width: 116px;
-    z-index: -1;
+    &::after {
+        background-image: url('../img/fon-paw.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: ' ';
+        display: block;
+        height: 99px;
+        opacity: 0.15;
+        position: absolute;
+        right: -30px;
+        top: 20px;
+        transform: rotate(30deg);
+        width: 116px;
+        z-index: -1;
+    }
 }
 
 @media (min-width: $tablet-width) {
     .reasons-container {
         padding: 110px 0 0;
-    }
-    
-    .reasons-container::after {
-        height: 257px;
-        right: -90px;
-        top: 20px;
-        transform: rotate(30deg);
-        width: 300px;
-    }
 
-    .reasons-container__title {
-        padding: 0;
-        padding-bottom: 56px;
+        &::after {
+            height: 257px;
+            right: -90px;
+            top: 20px;
+            transform: rotate(30deg);
+            width: 300px;
+        }
+
+        &__title {
+            padding: 0;
+            padding-bottom: 56px;
+        }
     }
 }
 
 @media (min-width: $desktop-width) {
     .reasons-container {
         padding: 130px 0 0;
-    }
 
-    .reasons-container::after {
-        height: 314px;
-        right: -70px;
-        top: 30px;
-        transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
-        width: 367px;
-    }
-      
-    .reasons-container__title {
-        padding: 0;
-        padding-bottom: 66px;
+        &::after {
+            height: 314px;
+            right: -70px;
+            top: 30px;
+            transform: matrix(-0.93, -0.36, -0.36, 0.93, 0, 0);
+            width: 367px;
+        }
+
+        &__title {
+            padding: 0;
+            padding-bottom: 66px;
+        }
     }
 }

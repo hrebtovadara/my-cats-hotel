@@ -2,19 +2,15 @@
     border: none;
     height: 300px;
     width: 320px;
-}
-
-@media (min-width: $tablet-width) {
-    .footer-map__iframe {
+    
+    @media (min-width: $tablet-width) {
         height: 552px;
         width: 399px;
-        
+    }
+
+    @media (min-width: $desktop-width) {
+        height: 580px;
+        width: 798px;    
     }
 }
 
-@media (min-width: $desktop-width) {
-    .footer-map__iframe {
-        height: 580px;
-        width: 798px;
-    }
-}

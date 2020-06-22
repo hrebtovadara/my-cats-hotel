@@ -5,15 +5,10 @@
     font-weight: bold;
     line-height: 33px;
     text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-    .title-text {
+    @media (min-width: $tablet-width) {
         font-size: 36px;
         line-height: 43px;
     }
 }
 
-@media (min-width: $desktop-width) {
-  
-}

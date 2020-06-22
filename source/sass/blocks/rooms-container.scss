@@ -2,70 +2,70 @@
     padding-top: 10px;
     position: relative;
     z-index: 2;
-}
 
-.rooms-container__title {
-    margin: 0;
-    padding: 20px 0;
-}
+    &::after {
+        background-image: url('../img/fon-fish.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: ' ';
+        display: block;
+        height: 46px;
+        left: 0;
+        opacity: 0.15;
+        position: absolute;
+        top: 30px;
+        width: 150px;
+        z-index: -1;
+    }
 
-.rooms-container::after {
-    background-image: url('../img/fon-fish.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: ' ';
-    display: block;
-    height: 46px;
-    left: 0;
-    opacity: 0.15;
-    position: absolute;
-    top: 30px;
-    width: 150px;
-    z-index: -1;
-}
+    &__title {
+        margin: 0;
+        padding: 20px 0;
+    }
 
-.rooms-container__slider {
-    margin: 0;
-    padding: 10px 0;
+    &__slider {
+        margin: 0;
+        padding: 10px 0;
+    }
 }
-
 
 @media (min-width: $tablet-width) {
     .rooms-container {
         padding-top: 80px;
-    }
 
-    .rooms-container__title {
-        padding: 0 0 35px;
-    }
-    
-    .rooms-container::after {
-        height: 105px;
-        left: 0;
-        top: 120px;
-        width: 339px;   
-    }
+        &::after {
+            height: 105px;
+            left: 0;
+            top: 120px;
+            width: 339px;   
+        }
 
-    .rooms-container__slider {
-        margin: 0;
-        margin-top: 40px;
-        padding: 10px 0 0;
+        &__title {
+            padding: 0 0 35px;
+        }
+
+        &__slider {
+            margin: 0;
+            margin-top: 40px;
+            padding: 10px 0 0;
+        }
     }
 }
 
 @media (min-width: $desktop-width) {
-    .rooms-container::after {
-        height: 151px;
-        left: 0;
-        top: 100px;
-        width: 484px;   
-    }
-
+   
     .rooms-container {
         padding-top: 90px;
-    }
 
-    .rooms-container__title {
-        padding: 0 0 45px;
+        &::after {
+            height: 151px;
+            left: 0;
+            top: 100px;
+            width: 484px;   
+        }
+
+        &__title {
+            padding: 0 0 45px;
+        }
     }
 }
