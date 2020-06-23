@@ -11,10 +11,10 @@
     }
 
     &::after {
-        background-image: url('../img/fon-paw.svg');
+        background-image: url("../img/fon-paw.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        content: ' ';
+        content: " ";
         display: block;
         height: 99px;
         opacity: 0.15;

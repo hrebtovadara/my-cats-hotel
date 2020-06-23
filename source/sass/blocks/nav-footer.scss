@@ -3,7 +3,7 @@
         color: $color-font;
         display: flex;
         flex-wrap: wrap;
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         font-size: 16px;
         line-height: 19px;
         margin: 0;
@@ -21,7 +21,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
     .nav-footer {
         &__list {
             display: flex;
@@ -43,6 +42,3 @@
     }
 }
 
-@media (min-width: $desktop-width) {
-  
-}

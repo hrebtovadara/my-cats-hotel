@@ -7,7 +7,7 @@
         margin-right: 20px;
     }
 
-    & svg {
+    svg {
         background-color: $color-white;
         border-radius: 50%;
         height: 24px;
@@ -26,10 +26,3 @@
     }
 }
 
-@media (min-width: $tablet-width) {
-  
-}
-
-@media (min-width: $desktop-width) {
-  
-}

@@ -10,12 +10,12 @@
     }
 
     &__contacts--number {
-            font-family: 'Rubik', sans-serif;
-            font-size: 16px;
-            font-style: normal;
-            line-height: 19px;
-            margin: 0;
-            padding: 20px 0;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 19px;
+        margin: 0;
+        padding: 20px 0;
     }   
 }
 
@@ -25,11 +25,11 @@
         background-color: $color-white;
         height: 62px;
 
-        & .header--toggle {
+        .header--toggle {
             display: none;
         }
 
-        & .nav-header__button--menu {
+        .nav-header__button--menu {
             display: block;
         }
     }    

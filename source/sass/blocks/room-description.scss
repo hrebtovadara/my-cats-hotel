@@ -5,7 +5,7 @@
     padding: 20px 25px;
 
     &__title {
-        font-family: 'Rubik', sans-serif;
+        font-family: "Rubik", sans-serif;
         font-size: 20px;
         font-weight: bold;
         line-height: 24px;
@@ -25,7 +25,7 @@
         &::before {
             background-color: $color-block;
             border-radius: 50%;
-            content: ' ';
+            content: " ";
             height: 11px;
             left: -19px;
             position: absolute;

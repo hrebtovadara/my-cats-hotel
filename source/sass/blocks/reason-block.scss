@@ -2,7 +2,7 @@
     background-color: $color-white;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
-    font-family: 'Rubik',sans-serif;
+    font-family: "Rubik",sans-serif;
     font-size: 15px;
     line-height: 21px;
     margin: 0;
@@ -17,7 +17,7 @@
     }
 
     &__title {
-        font-family: 'Rubik',sans-serif;
+        font-family: "Rubik",sans-serif;
         font-size: 17px;
         font-weight: bold;
         margin: 0;
@@ -104,7 +104,6 @@
         }
 
         &__image {
-
             &--temp {
                 height: 45px;
                 width: 26px;
@@ -151,7 +150,6 @@
         }
 
         &__image {
-
             &--temp {
                 height: 55px;
                 width: 31px;

@@ -4,10 +4,10 @@
     z-index: 2;
 
     &::after {
-        background-image: url('../img/fon-fish.svg');
+        background-image: url("../img/fon-fish.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        content: ' ';
+        content: " ";
         display: block;
         height: 46px;
         left: 0;
@@ -53,7 +53,6 @@
 }
 
 @media (min-width: $desktop-width) {
-   
     .rooms-container {
         padding-top: 90px;
 

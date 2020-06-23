@@ -1,5 +1,4 @@
 .slider {
-
     &__list {
         align-items: center;
         display: flex;
@@ -19,11 +18,11 @@
     &__input {
         display: none;
 
-        & + label::before {
+        + label::before {
             background-color: $color-inactive;
             border: 0;
             border-radius: 50%;
-            content: ' ';
+            content: " ";
             height: 12px;
             left: 0;
             position: absolute;
