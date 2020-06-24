@@ -1,3 +1,5 @@
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 @import "../../node_modules/node-normalize-scss/normalize";
 @import "../sass/blocks/general";
 @import "../sass/blocks/button";
@@ -17,6 +19,7 @@
 @import "../sass/blocks/room-description";
 @import "../sass/blocks/slider";
 @import "../sass/blocks/feedback-container";
+@import "../sass/blocks/feedback-list";
 @import "../sass/blocks/feedback-block";
 @import "../sass/blocks/address";
 @import "../sass/blocks/button-arrow";
@@ -28,3 +31,5 @@
 @import "../sass/blocks/nav-footer";
 @import "../sass/blocks/container";
 @import "../sass/blocks/visually-hidden";
+
+

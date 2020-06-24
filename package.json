@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@glidejs/glide": "^3.4.1",
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -29,5 +30,6 @@
     "posthtml-include": "^1.3.3",
     "stylelint": "^13.6.1",
     "stylelint-config-sass-guidelines": "^7.0.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -33,15 +33,36 @@ for (let i = 0; i < roomsInputArr.length; i++) {
   })
 }
 
+// import Glide from '@glidejs/glide'
 
-let feedbackBlockArr = document.querySelectorAll(".feedback-block");
-let feedbackInputArr = document.querySelectorAll(".input-feedback");
+// new Glide('.glide').mount()
 
-for (let i = 0; i < feedbackInputArr.length; i++) {
-  feedbackInputArr[i].addEventListener("click", function () {
-    for (block of feedbackBlockArr) {
-      block.classList.add("visually-hidden");
-    }
-    feedbackBlockArr[i].classList.remove("visually-hidden");
-  })
-}
+
+
+// let feedbackBlockArr = document.querySelectorAll(".feedback-block");
+// let feedbackInputArr = document.querySelectorAll(".input-feedback");
+
+// for (let i = 0; i < feedbackInputArr.length; i++) {
+//   feedbackInputArr[i].addEventListener("click", function () {
+//     for (block of feedbackBlockArr) {
+//       block.classList.add("visually-hidden");
+//     }
+//     feedbackBlockArr[i].classList.toggle("visually-hidden");
+//   })
+// }
+
+// var glide = new Glide('#intro', {
+//   type: 'carousel',
+//   perView: 4,
+//   focusAt: 'center',
+//   breakpoints: {
+//     800: {
+//       perView: 2
+//     },
+//     480: {
+//       perView: 1
+//     }
+//   }
+// })
+
+// glide.mount()

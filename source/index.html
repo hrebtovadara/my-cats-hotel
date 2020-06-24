@@ -19,8 +19,10 @@
           <li class="nav-header__item"><a href="index.html#reasons-link" class="nav-header__link">Почему мы?</a></li>
           <li class="nav-header__item"><a href="index.html#rooms-link" class="nav-header__link">Номера</a></li>
           <li class="nav-header__item"><a href="index.html#feedback-link" class="nav-header__link">Отзывы</a></li>
-          <li class="nav-header__item nav-header__item--search"><a href="index.html#address-link" class="nav-header__link">Как нас найти</a></li>
-          <li class="nav-header__item nav-header__item--contacts"><a href="index.html#address-link" class="nav-header__link">Контакты</a></li>
+          <li class="nav-header__item nav-header__item--search"><a href="index.html#address-link"
+              class="nav-header__link">Как нас найти</a></li>
+          <li class="nav-header__item nav-header__item--contacts"><a href="index.html#address-link"
+              class="nav-header__link">Контакты</a></li>
         </ul>
         <div class="header__contacts">
           <p class="header__contacts--number">8 (800) 333-55-99</p>
@@ -183,62 +185,69 @@
       </section>
       <section class="feedback-container container">
         <h3 class="feedback-container__title title-text" id="feedback-link">Отзывы</h3>
-        <ul class="feedback-container__list feedback-list">
-          <li class="feedback-list__item feedback-block">
-            <p class="feedback-block__text">Первый раз пришлось оставить нашего котика в гостинице,
-              очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
-              рассказывала, как он себя чувствует. И мы, и котик остались очень довольны!</p>
-            <div class="feedback-block__info">
-              <p class="feedback-block__info--autor">Валерия Гришаева</p>
-              <time class="feedback-block__info--data" datetime="2019-11-15">15 ноября, 2019</time>
-            </div>
-          </li>
-          <li class="feedback-list__item feedback-block visually-hidden">
-            <p class="feedback-block__text">Гостиницу для питомцев нам посоветовали друзья.
-              Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо
-              заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
-            <div class="feedback-block__info">
-              <p class="feedback-block__info--autor">Екатерина Минаева</p>
-              <time class="feedback-block__info--data" datetime="2019-11-15">10 октября, 2019</time>
-            </div>
-          </li>
-          <li class="feedback-list__item feedback-block visually-hidden">
-            <p class="feedback-block__text">Мой кот — настоящая привереда, угодить ему сложно.
-              У меня были особые требования к уходу за ним, и “Котейка” отлично справились.
-              Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
-            <div class="feedback-block__info">
-              <p class="feedback-block__info--autor">Павел Нечаев</p>
-              <time class="feedback-block__info--data" datetime="2019-11-15">2 августа, 2019</time>
-            </div>
-          </li>
-        </ul>
-        <div class="feedback-container__switch switch">
-          <div class="switch__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item">
-                <input type="radio" class="slider__input input-feedback" id="slider-feedback-one" name="slider-feedback"
-                  checked>
-                <label for="slider-feedback-one" class="slider__label"></label>
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="feedback-container__list feedback-list glide__slides">
+              <li class="feedback-list__item feedback-block glide__slide">
+                <p class="feedback-block__text">Первый раз пришлось оставить нашего котика в гостинице,
+                  очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
+                  рассказывала, как он себя чувствует. И мы, и котик остались очень довольны!</p>
+                <div class="feedback-block__info">
+                  <p class="feedback-block__info--autor">Валерия Гришаева</p>
+                  <time class="feedback-block__info--data" datetime="2019-11-15">15 ноября, 2019</time>
+                </div>
               </li>
-              <li class="slider__item">
-                <input type="radio" class="slider__input input-feedback" id="slider-feedback-two"
-                  name="slider-feedback">
-                <label for="slider-feedback-two" class="slider__label"></label>
+              <li class="feedback-list__item feedback-block glide__slide">
+                <p class="feedback-block__text">Гостиницу для питомцев нам посоветовали друзья.
+                  Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо
+                  заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
+                <div class="feedback-block__info">
+                  <p class="feedback-block__info--autor">Екатерина Минаева</p>
+                  <time class="feedback-block__info--data" datetime="2019-11-15">10 октября, 2019</time>
+                </div>
               </li>
-              <li class="slider__item">
-                <input type="radio" class="slider__input input-feedback" id="slider-feedback-three"
-                  name="slider-feedback">
-                <label for="slider-feedback-three" class="slider__label"></label>
+              <li class="feedback-list__item feedback-block glide__slide">
+                <p class="feedback-block__text">Мой кот — настоящая привереда, угодить ему сложно.
+                  У меня были особые требования к уходу за ним, и “Котейка” отлично справились.
+                  Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
+                <div class="feedback-block__info">
+                  <p class="feedback-block__info--autor">Павел Нечаев</p>
+                  <time class="feedback-block__info--data" datetime="2019-11-15">2 августа, 2019</time>
+                </div>
               </li>
             </ul>
           </div>
-          <div class="switch__button button-arrow">
-            <button class="button-arrow__item button-arrow__item--left">
-              <img src="img/arrow/icon-arrow-left-orange.svg" alt="">
-            </button>
-            <button class="button-arrow__item button-arrow__item--right">
-              <img src="img/arrow/icon-arrow-right-orange.svg" alt="">
-            </button>
+
+          <div class="feedback-container__switch switch">
+            <div class="switch__slider slider">
+              <ul class="slider__list">
+                <li class="slider__item">
+                  <input type="radio" class="slider__input input-feedback" id="slider-feedback-one"
+                    name="slider-feedback" checked>
+                  <label for="slider-feedback-one" class="slider__label"></label>
+                </li>
+                <li class="slider__item">
+                  <input type="radio" class="slider__input input-feedback" id="slider-feedback-two"
+                    name="slider-feedback">
+                  <label for="slider-feedback-two" class="slider__label"></label>
+                </li>
+                <li class="slider__item">
+                  <input type="radio" class="slider__input input-feedback" id="slider-feedback-three"
+                    name="slider-feedback">
+                  <label for="slider-feedback-three" class="slider__label"></label>
+                </li>
+              </ul>
+            </div>
+            <div class="switch__button button-arrow glide__arrows" data-glide-el="controls">
+              <button data-glide-dir="<"
+                class="  button-arrow__item button-arrow__item--left">
+                <img src="img/arrow/icon-arrow-left-orange.svg" alt="">
+              </button>
+              <button data-glide-dir=">"
+                class="  button-arrow__item button-arrow__item--right">
+                <img src="img/arrow/icon-arrow-right-orange.svg" alt="">
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -246,7 +255,7 @@
     <footer class="footer">
       <div class="footer__address">
         <div class="footer__address--text address">
-          <h3 class="address__title  title-text"  id="address-link">Как нас найти</h3>
+          <h3 class="address__title  title-text" id="address-link">Как нас найти</h3>
           <ul class="address__list">
             <li class="address__item">
               <p class="address__item--label">Адрес</p>
@@ -297,7 +306,8 @@
             <li class="nav-footer__item"><a href="index.html#reasons-link" class="nav-footer__link">Почему мы?</a></li>
             <li class="nav-footer__item"><a href="index.html#feedback-link" class="nav-footer__link">Отзывы</a></li>
             <li class="nav-footer__item"><a href="index.html#rooms-link" class="nav-footer__link">Номера</a></li>
-            <li class="nav-footer__item"><a href="index.html#address-link" class="nav-footer__link">Как нас найти</a></li>
+            <li class="nav-footer__item"><a href="index.html#address-link" class="nav-footer__link">Как нас найти</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -310,5 +320,7 @@
 </body>
 
 <script src="js/index.js"></script>
+<script src="js/glide.min.js"></script>
+<script type="module" src="js/slider.js"></script>
 
 </html>
