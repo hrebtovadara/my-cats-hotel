@@ -3,10 +3,8 @@
     padding: 35px 15px;
 
     &__item {
-        margin-bottom: 26px;
-
-        &:last-child {
-            margin-bottom: 0;
+        + .address__item {
+            margin-top: 26px;
         }
 
         &--label {
@@ -47,7 +45,9 @@
         }
 
         &__item {
-            margin-bottom: 30px;
+            + .address__item {
+                margin-top: 30px;
+            }
         }
     }
 }
