@@ -17,8 +17,6 @@ var sass = require('gulp-sass');
 gulp.task('sass', function () {
   gulp.src('path/to/input.scss')
     .pipe(sass({
-      // includePaths: require('node-normalize-scss').with('other/path', 'another/path')
-      // - or -
       includePaths: require('node-normalize-scss').includePaths
     }))
     .pipe(gulp.dest('path/to/output.css'));
@@ -90,7 +88,6 @@ gulp.task("clean", function () {
       "source/*.ico",
     ], {
       base: "source",
-      // ignore: "source/img/*.svg"
     })
       .pipe(gulp.dest("build"));
   });
