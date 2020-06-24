@@ -1,6 +1,6 @@
 .nav-footer {
     &__list {
-        color: $color-font;
+        color: var(--color-font);
         display: flex;
         flex-wrap: wrap;
         font-family: "Rubik", sans-serif;
@@ -16,7 +16,7 @@
     }
 
     &__item a {
-        color: $color-font;
+        color: var(--color-font);
     }
 }
 
@@ -35,7 +35,7 @@
             width: auto;
 
             &:hover {
-                border-bottom: 1px solid $color-font;
+                border-bottom: 1px solid var(--color-font);
                 margin-bottom: -1px;
             }
         }

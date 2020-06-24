@@ -1,5 +1,5 @@
 .header {
-    background-color: $color-block;
+    background-color: var(--color-block);
     height: 370px;
     margin: 0;
     padding: 12px 15px;
@@ -22,7 +22,7 @@
 
 @media (max-width: $mobile-width-only) {
     .header__with-js {
-        background-color: $color-white;
+        background-color: var(--color-white);
         height: 62px;
 
         .header--toggle {
@@ -38,7 +38,7 @@
 @media (min-width: $tablet-width) {
     .header {
         align-items: center;
-        background-color: $color-white;
+        background-color: var(--color-white);
         display: flex;
         height: 76px;
         justify-content: space-between;

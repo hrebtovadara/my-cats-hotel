@@ -8,18 +8,18 @@
     }
 
     svg {
-        background-color: $color-white;
+        background-color: var(--color-white);
         border-radius: 50%;
         height: 24px;
         width: 24px;
 
         &:hover {
-            background-color: $color-block;
+            background-color: var(--color-block);
             cursor: pointer;
         }
 
         &:active {
-            background-color: $color-block;
+            background-color: var(--color-block);
             cursor: pointer;
             opacity: 0.8;
         }

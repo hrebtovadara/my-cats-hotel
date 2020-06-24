@@ -1,5 +1,5 @@
 .room-description {
-    background-color: $color-white;
+    background-color: var(--color-white);
     margin: 0;
     min-height: 252px;
     padding: 20px 25px;
@@ -23,7 +23,7 @@
         position: relative;
 
         &::before {
-            background-color: $color-block;
+            background-color: var(--color-block);
             border-radius: 50%;
             content: " ";
             height: 11px;

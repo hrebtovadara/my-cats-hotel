@@ -7,7 +7,7 @@
         display: block;
 
         &__item {
-            background-color: $color-white;
+            background-color: var(--color-white);
             background-repeat: no-repeat;
             border: none;
             border-radius: 50%;

@@ -19,7 +19,7 @@
         display: none;
 
         + label::before {
-            background-color: $color-inactive;
+            background-color: var(--color-inactive);
             border: 0;
             border-radius: 50%;
             content: " ";
@@ -32,7 +32,7 @@
 
         &:hover + label::before,
         &:checked + label::before {
-            background-color: $color-block;
+            background-color: var(--color-block);
         }
     }
 }

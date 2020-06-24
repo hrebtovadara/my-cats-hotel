@@ -1,5 +1,5 @@
 .rooms-block {
-    background-color: $color-white;
+    background-color: var(--color-white);
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
     min-height: 444px;
@@ -33,7 +33,7 @@
         }
 
         &__description {
-            background-color: $color-white;
+            background-color: var(--color-white);
             border-radius: 10px;
             box-shadow: 0 0 25px rgba(208, 208, 208, 0.25);
             height: 266px;

@@ -9,24 +9,24 @@
     position: relative;
 
     &--white {
-        background-color: $color-white;
+        background-color: var(--color-white);
         border: 2px solid transparent;
-        color: $color-font;
+        color: var(--color-font);
         height: 52px;
         min-width: 206px;
 
         &:hover {
-            color: $color-font;
+            color: var(--color-font);
             cursor: pointer;
         }
 
         &:active {
-            color: $color-font;
+            color: var(--color-font);
             opacity: 0.8;
         }
 
         &::before {
-            background-color: $color-button-orange;
+            background-color: var(--color-button-orange);
             border-radius: 50px;
             content: "";
             font-size: 16px;
@@ -51,24 +51,24 @@
     }
 
     &--orange {
-        background-color: $color-button-orange;
+        background-color: var(--color-button-orange);
         border: 2px solid transparent;
-        color: $color-white;
+        color: var(--color-white);
         height: 52px;
         min-width: 240px;
 
         &:hover {
-            color: $color-white;
+            color: var(--color-white);
             cursor: pointer;
         }
 
         &:active {
-            color: $color-white;
+            color: var(--color-white);
             opacity: 0.8;
         }
 
         &::before {
-            background-color: $color-white;
+            background-color: var(--color-white);
             border-radius: 50px;
             content: "";
             font-size: 16px;
