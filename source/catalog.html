@@ -54,10 +54,10 @@
             </button>
         </header>
 
-        <main>
+        <main class="container general">
             <section class="catalog-rooms">
                 <h3 class="catalog-rooms__title">Наши номера</h3>
-                <div class="catalog-rooms__filters">
+                <div class="catalog-rooms__filters visually-hidden">
                     <div class="catalog-filters">
                         <button class="catalog-filters__button-filter">Фильтры</button>
                         <div class="catalog-filters__blur">
@@ -142,8 +142,25 @@
                 </div>
                 <ul class="catalog-rooms__list">
                     <li class="catalog-rooms__item our-rooms">
-                        <img class="">
-                        <p class="our-rooms__name"></p>
+                        <img class="our-rooms__image" src="img/catalog-rooms/catalog-econom-mobile.jpg">
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Эконом</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 90х70х180 см</li>
+                                <li class="our-rooms__item">Площадь - 0,63 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера 
+                                    <svg class="our-rooms__svg" >
+                                        <use class="" xlink:href="img/sprite.svg#emty"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: 100₽</li>
+                            </ul>
+                            <button class="room-description__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="our-rooms__image" src="img/catalog-rooms/catalog-econom-plus-mobile.jpg">
+                        <p class="our-rooms__name">Эконом-плюс</p>
                         <ul class="our-rooms__list">
                             <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
                             <li class="our-rooms__place">Площадь - </li>
@@ -153,8 +170,8 @@
                         <button class="room-description__button button button--orange">Забронировать</button>
                     </li>
                     <li class="catalog-rooms__item our-rooms">
-                        <img class="our-rooms__image">
-                        <p class="our-rooms__name"></p>
+                        <img class="our-rooms__image" src="img/catalog-rooms/catalog-comfort-mobile.jpg">
+                        <p class="our-rooms__name">Комфорт</p>
                         <ul class="our-rooms__list">
                             <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
                             <li class="our-rooms__place">Площадь - </li>
@@ -164,8 +181,8 @@
                         <button class="room-description__button button button--orange">Забронировать</button>
                     </li>
                     <li class="catalog-rooms__item our-rooms">
-                        <img class="our-rooms__image">
-                        <p class="our-rooms__name"></p>
+                        <img class="our-rooms__image" src="img/catalog-rooms/catalog-seut-mobile.jpg">
+                        <p class="our-rooms__name">Сьют</p>
                         <ul class="our-rooms__list">
                             <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
                             <li class="our-rooms__place">Площадь - </li>
@@ -175,8 +192,8 @@
                         <button class="room-description__button button button--orange">Забронировать</button>
                     </li>
                     <li class="catalog-rooms__item our-rooms">
-                        <img class="our-rooms__image">
-                        <p class="our-rooms__name"></p>
+                        <img class="our-rooms__image" src="img/catalog-rooms/catalog-lux-mobile.jpg">
+                        <p class="our-rooms__name">Люкс</p>
                         <ul class="our-rooms__list">
                             <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
                             <li class="our-rooms__place">Площадь - </li>
@@ -186,19 +203,8 @@
                         <button class="room-description__button button button--orange">Забронировать</button>
                     </li>
                     <li class="catalog-rooms__item our-rooms">
-                        <img class="our-rooms__image">
-                        <p class="our-rooms__name"></p>
-                        <ul class="our-rooms__list">
-                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
-                            <li class="our-rooms__place">Площадь - </li>
-                            <li class="our-rooms__furnishing">Оснащение номера </li>
-                            <li class="our-rooms__price">Цена за сутки: </li>
-                        </ul>
-                        <button class="room-description__button button button--orange">Забронировать</button>
-                    </li>
-                    <li class="catalog-rooms__item our-rooms">
-                        <img class="our-rooms__image">
-                        <p class="our-rooms__name"></p>
+                        <img class="our-rooms__image" src="img/catalog-rooms/catalog-super-lux-mobile.jpg">
+                        <p class="our-rooms__name">Супер-люкс</p>
                         <ul class="our-rooms__list">
                             <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
                             <li class="our-rooms__place">Площадь - </li>

@@ -1,0 +1,36 @@
+.our-rooms {
+    min-width: 290px;
+    min-height: 428px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    
+
+    &__image {
+        display: block;
+    }
+
+    &__block {
+        padding: 25px;
+        border: 1px solid var(--color-inactive);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: var(--font-rubik);
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__svg {
+        width: 18px;
+        height: 18px;
+        margin-left: 12px;  
+        fill: var(--color-catalog-icon);
+    }
+
+    &__item--icons {
+        display: flex;
+    }
+}
