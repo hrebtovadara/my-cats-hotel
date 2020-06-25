@@ -24,16 +24,17 @@
     .header__with-js {
         background-color: var(--color-white);
         height: 62px;
+    }
 
-        .header--toggle {
-            display: none;
-        }
+    .header--toggle {
+        display: none;
+    }
 
-        .nav-header__button--menu {
-            display: block;
-        }
-    }    
-}
+    .nav-header__button--menu {
+        display: block;
+    }
+}    
+
 
 @media (min-width: $tablet-width) {
     .header {
