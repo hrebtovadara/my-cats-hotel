@@ -8,6 +8,23 @@
     }
 }
 
+.switch__bullet {
+    width: 12px;
+    height: 12px;
+    background-color: var(--color-inactive);
+    border: none;
+    border-radius: 50%;
+    margin: 0 6px;
+}
+
+.switch__bullet:hover {
+    background-color: var(--color-block);
+}
+
+.switch__bullet--active {
+    background-color: var(--color-block);
+}
+
 @media (min-width: $desktop-width) {
     .switch {
         position: relative;

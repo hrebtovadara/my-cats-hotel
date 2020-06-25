@@ -217,26 +217,13 @@
               </li>
             </ul>
           </div>
-
           <div class="feedback-container__switch switch">
-            <div class="switch__slider slider">
-              <ul class="slider__list">
-                <li class="slider__item">
-                  <input type="radio" class="slider__input input-feedback" id="slider-feedback-one"
-                    name="slider-feedback" checked>
-                  <label for="slider-feedback-one" class="slider__label"></label>
-                </li>
-                <li class="slider__item">
-                  <input type="radio" class="slider__input input-feedback" id="slider-feedback-two"
-                    name="slider-feedback">
-                  <label for="slider-feedback-two" class="slider__label"></label>
-                </li>
-                <li class="slider__item">
-                  <input type="radio" class="slider__input input-feedback" id="slider-feedback-three"
-                    name="slider-feedback">
-                  <label for="slider-feedback-three" class="slider__label"></label>
-                </li>
-              </ul>
+            <div class="switch__slider">
+              <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="switch__bullet" data-glide-dir="=0"></button>
+                <button class="switch__bullet" data-glide-dir="=1"></button>
+                <button class="switch__bullet" data-glide-dir="=2"></button>
+              </div>
             </div>
             <div class="switch__button button-arrow glide__arrows" data-glide-el="controls">
               <button data-glide-dir="<"
@@ -291,8 +278,6 @@
         </div>
         <div class="footer__address--map footer-map">
           <div style="position:relative;overflow:hidden;">
-            <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a> -->
-            <!-- <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.323118%2C59.938635&sll=44.991843%2C53.154254&sspn=0.061626%2C0.020070&utm_medium=mapframe&utm_source=maps&z=17.02" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a> -->
             <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
           </div>
         </div>
