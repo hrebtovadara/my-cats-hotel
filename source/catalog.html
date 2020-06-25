@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="general">
+        <header class="header header--no-js ">
+            <div class="logo header__logo">
+                <a href="#"><img class="logo__image" src="img/logo.svg"></a>
+            </div>
+            <nav class="nav-header header__nav header--toggle">
+                <ul class="nav-header__list">
+                    <li class="nav-header__item"><a href="index.html#reasons-link" class="nav-header__link">Почему
+                            мы?</a></li>
+                    <li class="nav-header__item"><a href="index.html#rooms-link" class="nav-header__link">Номера</a>
+                    </li>
+                    <li class="nav-header__item"><a href="index.html#feedback-link" class="nav-header__link">Отзывы</a>
+                    </li>
+                    <li class="nav-header__item nav-header__item--search"><a href="index.html#address-link"
+                            class="nav-header__link">Как нас найти</a></li>
+                    <li class="nav-header__item nav-header__item--contacts"><a href="index.html#address-link"
+                            class="nav-header__link">Контакты</a></li>
+                </ul>
+                <div class="header__contacts">
+                    <p class="header__contacts--number">8 (800) 333-55-99</p>
+                    <div class="header__contacts--icons social-icon">
+                        <svg class="social-icon__item">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                        <svg class="social-icon__item">
+                            <use xlink:href="img/sprite.svg#icon-inst"></use>
+                        </svg>
+                        <svg class="social-icon__item">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <button class="nav-header__button nav-header__button--close header--close">
+                <svg class="nav-header__button--svg-close">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <button class="nav-header__button nav-header__button--menu header--close">
+                <svg class="nav-header__button--svg-menu">
+                    <use xlink:href="img/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </header>
+
+        <main>
+            <section class="catalog-rooms">
+                <h3 class="catalog-rooms__title">Наши номера</h3>
+                <div class="catalog-rooms__filters">
+                    <div class="catalog-filters">
+                        <button class="catalog-filters__button-filter">Фильтры</button>
+                        <div class="catalog-filters__blur">
+                            <div class="filter">
+                                <button class="filter__close"></button>
+                                <div class="filter__price">
+                                    <p class="filter__price-name">Цена за сутки</p>
+                                    <input class="filter__price-from">
+                                    <input class="filter__price-to">
+                                </div>
+                                <div class="filter__area">
+                                    <p class="filter__area-name">Площадь</p>
+                                    <ul class="filter__area-list area-list">
+                                        <li class="area-list__item">
+                                            <input type="checkbox" class="area-list__checkbox">
+                                            <label class="area-list__label">0,63 м2</label>
+                                        </li>
+                                        <li class="area-list__item">
+                                            <input type="checkbox" class="area-list__checkbox">
+                                            <label class="area-list__label">0,90 м2</label>
+                                        </li>
+                                        <li class="area-list__item">
+                                            <input type="checkbox" class="area-list__checkbox">
+                                            <label class="area-list__label">1,13 м2</label>
+                                        </li>
+                                        <li class="area-list__item">
+                                            <input type="checkbox" class="area-list__checkbox">
+                                            <label class="area-list__label">1,56 м2</label>
+                                        </li>
+                                        <li class="area-list__item">
+                                            <input type="checkbox" class="area-list__checkbox">
+                                            <label class="area-list__label">2,56 м2</label>
+                                        </li>
+                                        <li class="area-list__item">
+                                            <input type="checkbox" class="area-list__checkbox">
+                                            <label class="area-list__label">2,88 м2</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="filter__furnishing">
+                                    <p class="filter__furnishing-name">Оснажение номера</p>
+                                    <ul class="filter__furnishing-list furnishing-list">
+                                        <li class="furnishing-list__item">
+                                            <input type="checkbox" class="furnishing-list__checkbox">
+                                            <label class="furnishing-list__label">Пустой номер</label>
+                                        </li>
+                                        <li class="furnishing-list__item">
+                                            <input type="checkbox" class="furnishing-list__checkbox">
+                                            <label class="furnishing-list__label">Лежак</label>
+                                        </li>
+                                        <li class="furnishing-list__item">
+                                            <input type="checkbox" class="furnishing-list__checkbox">
+                                            <label class="furnishing-list__label">Когтеточка</label>
+                                        </li>
+                                        <li class="furnishing-list__item">
+                                            <input type="checkbox" class="furnishing-list__checkbox">
+                                            <label class="furnishing-list__label">Игровой-комплекс</label>
+                                        </li>
+                                        <li class="furnishing-list__item">
+                                            <input type="checkbox" class="furnishing-list__checkbox">
+                                            <label class="furnishing-list__label">Домик</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="filter__button filter__button--enter">Подобрать</button>
+                                <button class="filter__button filter__button--delete">Сбросить фильтр</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort">
+                        <button class="sort__button">
+                            <p class="sort__enter">По площади</p>
+                            <img class="sort__image">
+                        </button>
+                        <ul class="sort__list">
+                            <li class="sort__list__item sort__list__item--up">По площади</li>
+                            <li class="sort__list__item sort__list__item--down">По площади</li>
+                            <li class="sort__list__item sort__list__item--up">По цене</li>
+                            <li class="sort__list__item sort__list__item--down">По цене</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="catalog-rooms__list">
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="">
+                        <p class="our-rooms__name"></p>
+                        <ul class="our-rooms__list">
+                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
+                            <li class="our-rooms__place">Площадь - </li>
+                            <li class="our-rooms__furnishing">Оснащение номера </li>
+                            <li class="our-rooms__price">Цена за сутки: </li>
+                        </ul>
+                        <button class="room-description__button button button--orange">Забронировать</button>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="our-rooms__image">
+                        <p class="our-rooms__name"></p>
+                        <ul class="our-rooms__list">
+                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
+                            <li class="our-rooms__place">Площадь - </li>
+                            <li class="our-rooms__furnishing">Оснащение номера </li>
+                            <li class="our-rooms__price">Цена за сутки: </li>
+                        </ul>
+                        <button class="room-description__button button button--orange">Забронировать</button>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="our-rooms__image">
+                        <p class="our-rooms__name"></p>
+                        <ul class="our-rooms__list">
+                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
+                            <li class="our-rooms__place">Площадь - </li>
+                            <li class="our-rooms__furnishing">Оснащение номера </li>
+                            <li class="our-rooms__price">Цена за сутки: </li>
+                        </ul>
+                        <button class="room-description__button button button--orange">Забронировать</button>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="our-rooms__image">
+                        <p class="our-rooms__name"></p>
+                        <ul class="our-rooms__list">
+                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
+                            <li class="our-rooms__place">Площадь - </li>
+                            <li class="our-rooms__furnishing">Оснащение номера </li>
+                            <li class="our-rooms__price">Цена за сутки: </li>
+                        </ul>
+                        <button class="room-description__button button button--orange">Забронировать</button>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="our-rooms__image">
+                        <p class="our-rooms__name"></p>
+                        <ul class="our-rooms__list">
+                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
+                            <li class="our-rooms__place">Площадь - </li>
+                            <li class="our-rooms__furnishing">Оснащение номера </li>
+                            <li class="our-rooms__price">Цена за сутки: </li>
+                        </ul>
+                        <button class="room-description__button button button--orange">Забронировать</button>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <img class="our-rooms__image">
+                        <p class="our-rooms__name"></p>
+                        <ul class="our-rooms__list">
+                            <li class="our-rooms__size">Размеры (ШхГхВ) - </li>
+                            <li class="our-rooms__place">Площадь - </li>
+                            <li class="our-rooms__furnishing">Оснащение номера </li>
+                            <li class="our-rooms__price">Цена за сутки: </li>
+                        </ul>
+                        <button class="room-description__button button button--orange">Забронировать</button>
+                    </li>
+                </ul>
+            </section>
+            <section class="catalog-sale">
+                <p class="catalog-sale__title">Каждый 7-й день <br>
+                    Бесплатно</p>
+                <p class="catalog-sale__subtitle">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+                <button class="button button--white banner__button">Забронировать</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__address">
+                <div class="footer__address--text address">
+                    <h3 class="address__title  title-text" id="address-link">Как нас найти</h3>
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <p class="address__item--label">Адрес</p>
+                            <p class="address__item--description">Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">Режим работы</p>
+                            <p class="address__item--description">Ежедневно, с 9:00 до 20:00</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">Телефон</p>
+                            <p class="address__item--description">8 (800) 333-55-99</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">E-mail</p>
+                            <p class="address__item--description">info@cat-hotel.ru</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">Социальные сети</p>
+                            <div class="address__item--icons social-icon">
+                                <a href="#"><svg class="social-icon__item">
+                                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                                    </svg></a>
+                                <a href="#"><svg class="social-icon__item">
+                                        <use xlink:href="img/sprite.svg#icon-inst"></use>
+                                    </svg></a>
+                                <a href="#"><svg class="social-icon__item">
+                                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                                    </svg></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__address--map footer-map">
+                    <div style="position:relative;overflow:hidden;">
+                        <iframe class="footer-map__iframe"
+                            src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__nav footer-nav">
+                <div class="footer-nav__logo">
+                    <a href="#"><img src="img/logo-desktop.png"></a>
+                </div>
+                <nav class="footer-nav__navigation nav-footer">
+                    <ul class="nav-footer__list">
+                        <li class="nav-footer__item"><a href="index.html#reasons-link" class="nav-footer__link">Почему
+                                мы?</a></li>
+                        <li class="nav-footer__item"><a href="index.html#feedback-link"
+                                class="nav-footer__link">Отзывы</a></li>
+                        <li class="nav-footer__item"><a href="index.html#rooms-link" class="nav-footer__link">Номера</a>
+                        </li>
+                        <li class="nav-footer__item"><a href="index.html#address-link" class="nav-footer__link">Как нас
+                                найти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-confidentiality">
+                <p class="footer-confidentiality__year">© 2019 Все права защищены</p>
+                <p class="footer-confidentiality__politic">Политика конфиденциальности</p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+
+</html>
