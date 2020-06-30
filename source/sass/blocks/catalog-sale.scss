@@ -1,0 +1,31 @@
+.catalog-sale {
+    background-image: url("../../img/fons/advertising-mobile.png");
+    width: 290px;
+    height: 496px;
+    text-align: center;
+    padding: 50px 25px;
+    margin-bottom: 70px;
+
+    &__title {
+        font-family: var(--font-rubik);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0;
+
+        &--free {
+            font-size: 37px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        font-family: var(--font-open-sans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        
+    }
+}

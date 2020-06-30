@@ -2,7 +2,9 @@
     min-width: 290px;
     min-height: 428px;
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
-    
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 17px;
 
     &__image {
         display: block;
@@ -10,6 +12,7 @@
 
     &__block {
         padding: 25px;
+        min-height: 243px;
         border: 1px solid var(--color-inactive);
         border-top: none;
         border-radius: 0 0 6px 6px;
@@ -21,16 +24,22 @@
         font-weight: normal;
         font-size: 20px;
         line-height: 24px;
+        margin-bottom: 20px;
     }
 
     &__svg {
-        width: 18px;
+        width: 16px;
         height: 18px;
         margin-left: 12px;  
         fill: var(--color-catalog-icon);
+    }
+
+    &__item {
+        margin-bottom: 15px;
     }
 
     &__item--icons {
         display: flex;
     }
 }
+
