@@ -1,7 +1,16 @@
-.catalog-rooms__title {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 33px;
+.catalog-rooms {
+
+    &__title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    &__filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }

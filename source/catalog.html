@@ -57,68 +57,83 @@
         <main class="container general">
             <section class="catalog-rooms">
                 <h3 class="catalog-rooms__title">Наши номера</h3>
-                <div class="catalog-rooms__filters visually-hidden">
+                <div class="catalog-rooms__filters">
                     <div class="catalog-filters">
-                        <button class="catalog-filters__button-filter">Фильтры</button>
-                        <div class="catalog-filters__blur">
+                        <button class="catalog-filters__button">Фильтры</button>
+                        <div class="catalog-filters__blur visually-hidden">
                             <div class="filter">
-                                <button class="filter__close"></button>
+                                <button class="filter__close">
+                                    <svg class="filter__close-button">
+                                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
                                 <div class="filter__price">
-                                    <p class="filter__price-name">Цена за сутки</p>
-                                    <input class="filter__price-from">
-                                    <input class="filter__price-to">
+                                    <p class="filter__name">Цена за сутки</p>
+                                    <input class="filter__price-from" placeholder="от 100">
+                                    <input class="filter__price-to" placeholder="до 600">
                                 </div>
                                 <div class="filter__area">
-                                    <p class="filter__area-name">Площадь</p>
+                                    <p class="filter__name">Площадь</p>
                                     <ul class="filter__area-list area-list">
                                         <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox">
-                                            <label class="area-list__label">0,63 м2</label>
+                                            <input type="checkbox" class="area-list__checkbox" id="0-63"
+                                                name="area-list" checked>
+                                            <label class="area-list__label" for="0-63">0,63 м2</label>
                                         </li>
                                         <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox">
-                                            <label class="area-list__label">0,90 м2</label>
+                                            <input type="checkbox" class="area-list__checkbox" id="0-90"
+                                                name="area-list">
+                                            <label class="area-list__label" for="0-90">0,90 м2</label>
                                         </li>
                                         <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox">
-                                            <label class="area-list__label">1,13 м2</label>
+                                            <input type="checkbox" class="area-list__checkbox" id="1-13"
+                                                name="area-list">
+                                            <label class="area-list__label" for="1-13">1,13 м2</label>
                                         </li>
                                         <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox">
-                                            <label class="area-list__label">1,56 м2</label>
+                                            <input type="checkbox" class="area-list__checkbox" id="1-56"
+                                                name="area-list">
+                                            <label class="area-list__label" for="1-56">1,56 м2</label>
                                         </li>
                                         <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox">
-                                            <label class="area-list__label">2,56 м2</label>
+                                            <input type="checkbox" class="area-list__checkbox" id="2-56"
+                                                name="area-list">
+                                            <label class="area-list__label" for="2-56">2,56 м2</label>
                                         </li>
                                         <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox">
-                                            <label class="area-list__label">2,88 м2</label>
+                                            <input type="checkbox" class="area-list__checkbox" id="2-88"
+                                                name="area-list">
+                                            <label class="area-list__label" for="2-88">2,88 м2</label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="filter__furnishing">
-                                    <p class="filter__furnishing-name">Оснажение номера</p>
+                                    <p class="filter__name">Оснажение номера</p>
                                     <ul class="filter__furnishing-list furnishing-list">
                                         <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox">
-                                            <label class="furnishing-list__label">Пустой номер</label>
+                                            <input type="checkbox" class="furnishing-list__checkbox" id="empty"
+                                                name="furnishing-list">
+                                            <label class="furnishing-list__label" for="empty">Пустой номер</label>
                                         </li>
                                         <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox">
-                                            <label class="furnishing-list__label">Лежак</label>
+                                            <input type="checkbox" class="furnishing-list__checkbox" id="bed"
+                                                name="furnishing-list">
+                                            <label class="furnishing-list__label" for="bed">Лежак</label>
                                         </li>
                                         <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox">
-                                            <label class="furnishing-list__label">Когтеточка</label>
+                                            <input type="checkbox" class="furnishing-list__checkbox" id="claw-point"
+                                                name="furnishing-list">
+                                            <label class="furnishing-list__label" for="claw-point">Когтеточка</label>
                                         </li>
                                         <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox">
-                                            <label class="furnishing-list__label">Игровой-комплекс</label>
+                                            <input type="checkbox" class="furnishing-list__checkbox" id="game"
+                                                name="furnishing-list">
+                                            <label class="furnishing-list__label" for="game">Игровой-комплекс</label>
                                         </li>
                                         <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox">
-                                            <label class="furnishing-list__label">Домик</label>
+                                            <input type="checkbox" class="furnishing-list__checkbox" id="house"
+                                                name="furnishing-list">
+                                            <label class="furnishing-list__label" for="house">Домик</label>
                                         </li>
                                     </ul>
                                 </div>
@@ -129,15 +144,38 @@
                     </div>
                     <div class="sort">
                         <button class="sort__button">
-                            <p class="sort__enter">По площади</p>
-                            <img class="sort__image">
+                            <p class="sort__enter">
+                                <svg class="sort__enter-icon">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                </svg>
+                                По площади</p>
+                            <div class="sort__image sort__image--down "></div>
                         </button>
-                        <ul class="sort__list">
-                            <li class="sort__list__item sort__list__item--up">По площади</li>
-                            <li class="sort__list__item sort__list__item--down">По площади</li>
-                            <li class="sort__list__item sort__list__item--up">По цене</li>
-                            <li class="sort__list__item sort__list__item--down">По цене</li>
-                        </ul>
+                        <div class="sort__container visually-hidden">
+                            <ul class="sort__list">
+                                <li class="sort__item sort__item--up">
+                                    <svg class="sort__enter-icon">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                    </svg>
+                                    По площади</li>
+                                <li class="sort__item sort__item--down">
+                                    <svg class="sort__enter-icon">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
+                                    </svg>
+                                    По площади</li>
+                                <li class="sort__item sort__item--up">
+                                    <svg class="sort__enter-icon">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                    </svg>
+                                    По цене</li>
+                                <li class="sort__item sort__item--down">
+                                    <svg class="sort__enter-icon">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
+                                    </svg>
+                                    По цене</li>
+                            </ul>
+                            <div class="sort__image sort__image--up"></div>
+                        </div>
                     </div>
                 </div>
                 <ul class="catalog-rooms__list">
@@ -165,7 +203,7 @@
                             <ul class="our-rooms__list">
                                 <li class="our-rooms__item">Размеры (ШхГхВ) - 90х100х180 см</li>
                                 <li class="our-rooms__item">Площадь - 0,90 м2</li>
-                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера 
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
                                     <svg class="our-rooms__svg">
                                         <use class="" xlink:href="img/sprite.svg#bed"></use>
                                     </svg>
@@ -185,7 +223,7 @@
                             <ul class="our-rooms__list">
                                 <li class="our-rooms__item">Размеры (ШхГхВ) - 100х125х180 см</li>
                                 <li class="our-rooms__item">Площадь - 1,13 м2</li>
-                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера 
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
                                     <svg class="our-rooms__svg">
                                         <use class="" xlink:href="img/sprite.svg#bed"></use>
                                     </svg>
@@ -208,7 +246,7 @@
                             <ul class="our-rooms__list">
                                 <li class="our-rooms__item">Размеры (ШхГхВ) - 125х125х180 см</li>
                                 <li class="our-rooms__item">Площадь - 1,56 м2</li>
-                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера 
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
                                     <svg class="our-rooms__svg">
                                         <use class="" xlink:href="img/sprite.svg#bed"></use>
                                     </svg>
@@ -231,7 +269,7 @@
                             <ul class="our-rooms__list">
                                 <li class="our-rooms__item">Размеры (ШхГхВ) - 160х160х180 см</li>
                                 <li class="our-rooms__item">Площадь - 2,56 м2</li>
-                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера 
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
                                     <svg class="our-rooms__svg">
                                         <use class="" xlink:href="img/sprite.svg#bed"></use>
                                     </svg>
@@ -257,7 +295,7 @@
                             <ul class="our-rooms__list">
                                 <li class="our-rooms__item">Размеры (ШхГхВ) - 180х160х180 см</li>
                                 <li class="our-rooms__item">Площадь - 2,88 м2</li>
-                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера 
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
                                     <svg class="our-rooms__svg">
                                         <use class="" xlink:href="img/sprite.svg#bed"></use>
                                     </svg>
@@ -280,7 +318,7 @@
             </section>
             <section class="catalog-sale">
                 <p class="catalog-sale__title">Каждый 7-й день</p>
-                <p class="catalog-sale__title catalog-sale__title--free">Бесплатно</p> 
+                <p class="catalog-sale__title catalog-sale__title--free">Бесплатно</p>
                 <p class="catalog-sale__subtitle">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
                 <button class="button button--white">Забронировать</button>
             </section>
