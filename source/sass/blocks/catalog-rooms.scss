@@ -23,5 +23,9 @@
             align-items: center;
             justify-content: space-between;
         }
+
+        &__filters {
+            min-width: 324px;
+        }
     }
 }

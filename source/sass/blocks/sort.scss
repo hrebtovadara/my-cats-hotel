@@ -70,3 +70,8 @@
     }
 }
 
+@media (min-width: $tablet-width) {
+    .sort__button {
+        min-width: 174px;
+    }
+}
