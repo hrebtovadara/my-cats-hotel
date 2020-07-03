@@ -14,3 +14,14 @@
         align-items: flex-start;
     }
 }
+
+@media (min-width: $tablet-width) {
+    .catalog-rooms {
+        
+        &__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}

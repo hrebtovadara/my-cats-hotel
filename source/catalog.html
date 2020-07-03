@@ -56,125 +56,129 @@
 
         <main class="container general">
             <section class="catalog-rooms">
-                <h3 class="catalog-rooms__title">Наши номера</h3>
-                <div class="catalog-rooms__filters">
-                    <div class="catalog-filters">
-                        <button class="catalog-filters__button">Фильтры</button>
-                        <div class="catalog-filters__blur visually-hidden">
-                            <div class="filter">
-                                <button class="filter__close">
-                                    <svg class="filter__close-button">
-                                        <use xlink:href="img/sprite.svg#icon-close"></use>
-                                    </svg>
-                                </button>
-                                <div class="filter__price">
-                                    <p class="filter__name">Цена за сутки</p>
-                                    <input class="filter__price-from" placeholder="от 100">
-                                    <input class="filter__price-to" placeholder="до 600">
+                <div class="catalog-rooms__head">
+                    <h3 class="catalog-rooms__title">Наши номера</h3>
+                    <div class="catalog-rooms__filters">
+                        <div class="catalog-filters">
+                            <button class="catalog-filters__button">Фильтры</button>
+                            <div class="catalog-filters__blur visually-hidden">
+                                <div class="filter">
+                                    <button class="filter__close">
+                                        <svg class="filter__close-button">
+                                            <use xlink:href="img/sprite.svg#icon-close"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="filter__price">
+                                        <p class="filter__name">Цена за сутки</p>
+                                        <input class="filter__price-from" placeholder="от 100">
+                                        <input class="filter__price-to" placeholder="до 600">
+                                    </div>
+                                    <div class="filter__area">
+                                        <p class="filter__name">Площадь</p>
+                                        <ul class="filter__area-list area-list">
+                                            <li class="area-list__item">
+                                                <input type="checkbox" class="area-list__checkbox" id="0-63"
+                                                    name="area-list" checked>
+                                                <label class="area-list__label" for="0-63">0,63 м2</label>
+                                            </li>
+                                            <li class="area-list__item">
+                                                <input type="checkbox" class="area-list__checkbox" id="0-90"
+                                                    name="area-list">
+                                                <label class="area-list__label" for="0-90">0,90 м2</label>
+                                            </li>
+                                            <li class="area-list__item">
+                                                <input type="checkbox" class="area-list__checkbox" id="1-13"
+                                                    name="area-list">
+                                                <label class="area-list__label" for="1-13">1,13 м2</label>
+                                            </li>
+                                            <li class="area-list__item">
+                                                <input type="checkbox" class="area-list__checkbox" id="1-56"
+                                                    name="area-list">
+                                                <label class="area-list__label" for="1-56">1,56 м2</label>
+                                            </li>
+                                            <li class="area-list__item">
+                                                <input type="checkbox" class="area-list__checkbox" id="2-56"
+                                                    name="area-list">
+                                                <label class="area-list__label" for="2-56">2,56 м2</label>
+                                            </li>
+                                            <li class="area-list__item">
+                                                <input type="checkbox" class="area-list__checkbox" id="2-88"
+                                                    name="area-list">
+                                                <label class="area-list__label" for="2-88">2,88 м2</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter__furnishing">
+                                        <p class="filter__name">Оснажение номера</p>
+                                        <ul class="filter__furnishing-list furnishing-list">
+                                            <li class="furnishing-list__item">
+                                                <input type="checkbox" class="furnishing-list__checkbox" id="empty"
+                                                    name="furnishing-list">
+                                                <label class="furnishing-list__label" for="empty">Пустой номер</label>
+                                            </li>
+                                            <li class="furnishing-list__item">
+                                                <input type="checkbox" class="furnishing-list__checkbox" id="bed"
+                                                    name="furnishing-list">
+                                                <label class="furnishing-list__label" for="bed">Лежак</label>
+                                            </li>
+                                            <li class="furnishing-list__item">
+                                                <input type="checkbox" class="furnishing-list__checkbox" id="claw-point"
+                                                    name="furnishing-list">
+                                                <label class="furnishing-list__label"
+                                                    for="claw-point">Когтеточка</label>
+                                            </li>
+                                            <li class="furnishing-list__item">
+                                                <input type="checkbox" class="furnishing-list__checkbox" id="game"
+                                                    name="furnishing-list">
+                                                <label class="furnishing-list__label"
+                                                    for="game">Игровой-комплекс</label>
+                                            </li>
+                                            <li class="furnishing-list__item">
+                                                <input type="checkbox" class="furnishing-list__checkbox" id="house"
+                                                    name="furnishing-list">
+                                                <label class="furnishing-list__label" for="house">Домик</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="filter__button filter__button--enter">Подобрать</button>
+                                    <button class="filter__button filter__button--delete">Сбросить фильтр</button>
                                 </div>
-                                <div class="filter__area">
-                                    <p class="filter__name">Площадь</p>
-                                    <ul class="filter__area-list area-list">
-                                        <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox" id="0-63"
-                                                name="area-list" checked>
-                                            <label class="area-list__label" for="0-63">0,63 м2</label>
-                                        </li>
-                                        <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox" id="0-90"
-                                                name="area-list">
-                                            <label class="area-list__label" for="0-90">0,90 м2</label>
-                                        </li>
-                                        <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox" id="1-13"
-                                                name="area-list">
-                                            <label class="area-list__label" for="1-13">1,13 м2</label>
-                                        </li>
-                                        <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox" id="1-56"
-                                                name="area-list">
-                                            <label class="area-list__label" for="1-56">1,56 м2</label>
-                                        </li>
-                                        <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox" id="2-56"
-                                                name="area-list">
-                                            <label class="area-list__label" for="2-56">2,56 м2</label>
-                                        </li>
-                                        <li class="area-list__item">
-                                            <input type="checkbox" class="area-list__checkbox" id="2-88"
-                                                name="area-list">
-                                            <label class="area-list__label" for="2-88">2,88 м2</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="filter__furnishing">
-                                    <p class="filter__name">Оснажение номера</p>
-                                    <ul class="filter__furnishing-list furnishing-list">
-                                        <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox" id="empty"
-                                                name="furnishing-list">
-                                            <label class="furnishing-list__label" for="empty">Пустой номер</label>
-                                        </li>
-                                        <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox" id="bed"
-                                                name="furnishing-list">
-                                            <label class="furnishing-list__label" for="bed">Лежак</label>
-                                        </li>
-                                        <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox" id="claw-point"
-                                                name="furnishing-list">
-                                            <label class="furnishing-list__label" for="claw-point">Когтеточка</label>
-                                        </li>
-                                        <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox" id="game"
-                                                name="furnishing-list">
-                                            <label class="furnishing-list__label" for="game">Игровой-комплекс</label>
-                                        </li>
-                                        <li class="furnishing-list__item">
-                                            <input type="checkbox" class="furnishing-list__checkbox" id="house"
-                                                name="furnishing-list">
-                                            <label class="furnishing-list__label" for="house">Домик</label>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <button class="filter__button filter__button--enter">Подобрать</button>
-                                <button class="filter__button filter__button--delete">Сбросить фильтр</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="sort">
-                        <button class="sort__button">
-                            <p class="sort__enter">
-                                <svg class="sort__enter-icon">
-                                    <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
-                                </svg>
-                                По площади</p>
-                            <div class="sort__image sort__image--down "></div>
-                        </button>
-                        <div class="sort__container visually-hidden">
-                            <ul class="sort__list">
-                                <li class="sort__item sort__item--up">
+                        <div class="sort">
+                            <button class="sort__button">
+                                <p class="sort__enter">
                                     <svg class="sort__enter-icon">
                                         <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
                                     </svg>
-                                    По площади</li>
-                                <li class="sort__item sort__item--down">
-                                    <svg class="sort__enter-icon">
-                                        <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
-                                    </svg>
-                                    По площади</li>
-                                <li class="sort__item sort__item--up">
-                                    <svg class="sort__enter-icon">
-                                        <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
-                                    </svg>
-                                    По цене</li>
-                                <li class="sort__item sort__item--down">
-                                    <svg class="sort__enter-icon">
-                                        <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
-                                    </svg>
-                                    По цене</li>
-                            </ul>
-                            <div class="sort__image sort__image--up"></div>
+                                    По площади</p>
+                                <div class="sort__image sort__image--down "></div>
+                            </button>
+                            <div class="sort__container visually-hidden">
+                                <ul class="sort__list">
+                                    <li class="sort__item sort__item--up">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                        </svg>
+                                        По площади</li>
+                                    <li class="sort__item sort__item--down">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
+                                        </svg>
+                                        По площади</li>
+                                    <li class="sort__item sort__item--up">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                        </svg>
+                                        По цене</li>
+                                    <li class="sort__item sort__item--down">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
+                                        </svg>
+                                        По цене</li>
+                                </ul>
+                                <div class="sort__image sort__image--up"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
