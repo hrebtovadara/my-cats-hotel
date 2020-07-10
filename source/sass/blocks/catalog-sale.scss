@@ -26,6 +26,30 @@
         font-weight: normal;
         font-size: 14px;
         line-height: 17px;
-        
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .catalog-sale {
+        background-image: url("../../img/fons/advertising-tablet.png");
+        width: 678px;
+        height: 359px;
+        text-align: left;
+        padding: 69px 50px;
+        margin-bottom: 120px;
+
+        &__title {
+            font-size: 36px;
+            line-height: 43px;
+               
+            &--free {
+                font-size: 56px;
+                line-height: 66px;
+            }
+        }
+
+        &__subtitle {
+            width: 239px;
+        }
     }
 }

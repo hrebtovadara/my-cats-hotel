@@ -17,6 +17,12 @@
 
 @media (min-width: $tablet-width) {
     .catalog-rooms {
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         
         &__head {
             display: flex;
