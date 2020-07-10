@@ -70,3 +70,25 @@
         }
     }
 }
+
+@media (min-width: $tablet-width) {
+    .filter {
+        position: absolute;
+        width: 290px;
+        height: 624px;
+        top: 70px;
+        left: 0px;
+        background: #FFFEFD;
+        box-shadow: none;
+        border-radius: none;
+        padding: 0;
+        z-index: 5;
+        font-size: 14px;
+        line-height: 17px;
+
+        &__close {
+            display: none;
+        }
+
+    }
+}

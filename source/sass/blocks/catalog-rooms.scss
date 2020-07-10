@@ -35,3 +35,13 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .catalog-rooms {
+        position: relative;
+
+        &__list {
+            margin-left: 300px;
+        }
+    }
+}
