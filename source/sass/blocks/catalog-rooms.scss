@@ -1,11 +1,12 @@
 .catalog-rooms {
-
     &__title {
         font-family: Rubik;
         font-style: normal;
         font-weight: bold;
         font-size: 28px;
         line-height: 33px;
+        margin: 0;
+        padding: 35px 0 30px;
     }
 
     &__filters {
@@ -13,11 +14,14 @@
         justify-content: space-between;
         align-items: flex-start;
     }
+    
+    &__list {
+        margin-top: 0;
+    }
 }
 
 @media (min-width: $tablet-width) {
     .catalog-rooms {
-
         &__list {
             display: flex;
             flex-wrap: wrap;

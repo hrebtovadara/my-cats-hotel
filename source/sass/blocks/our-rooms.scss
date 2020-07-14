@@ -4,13 +4,10 @@
     box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
     margin-top: 30px;
     font-size: 13px;
-    line-height: 17px;
-    
     
     &__image-container {
         width: 290px;
         height: 185px;
-        
     }
 
     &__image {
@@ -34,7 +31,7 @@
         font-weight: normal;
         font-size: 20px;
         line-height: 24px;
-        margin-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     &__svg {
@@ -45,11 +42,24 @@
     }
 
     &__item {
-        margin-bottom: 15px;
+        padding-bottom: 10px;
+
+        &--price {
+            font-size: 17px;
+            line-height: 18px;
+            padding-left: 10px;
+        }
+
+        &--icons {
+            display: flex;
+        }
     }
 
-    &__item--icons {
-        display: flex;
+    &__button {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 14px;
+        height: 50px;
     }
 }
 
