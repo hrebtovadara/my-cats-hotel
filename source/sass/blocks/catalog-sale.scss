@@ -53,3 +53,28 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .catalog-sale {
+        background-image: url("../../img/fons/advertising-desktop.png");
+        width: 1170px;
+        height: 379px;
+        text-align: left;
+        padding:  78px 270px;
+        margin-bottom: 140px;
+
+        &__title {
+            font-size: 36px;
+            line-height: 43px;
+               
+            &--free {
+                font-size: 56px;
+                line-height: 66px;
+            }
+        }
+
+        &__subtitle {
+            width: 254px;
+        }
+    }
+}

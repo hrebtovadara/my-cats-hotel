@@ -71,3 +71,26 @@
         }
     }
 }
+
+@media (min-width: $desktop-width) {
+    .our-rooms {
+        width: 270px;
+        min-height: 428px;
+
+        &__image-container {
+            width: 270px;
+        }
+
+        &__button {
+            width: 230px;
+        }
+
+        &__block {
+            padding: 25px 20px;
+        }
+
+        &__svg {
+            margin-left: 8px;
+        }
+    }
+}
