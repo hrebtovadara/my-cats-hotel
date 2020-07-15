@@ -36,9 +36,20 @@
 }
 
 @media (min-width: $tablet-width) {
-    .catalog-filters__button {
-        width: 121px;
+    .catalog-filters {
+    
+        &__button {
+            width: 121px;
+        }
+
+        &__blur {
+            width: 768px;
+            height: 1351px;
+            left: 0px;
+            top: -76px; 
+        }
     }
+    
 }
 
 @media (min-width: $desktop-width) {
