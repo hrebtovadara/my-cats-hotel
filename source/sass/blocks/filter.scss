@@ -91,3 +91,21 @@
         right: 0;
     }
 }
+
+@media (min-width: $desktop-width) {
+    .filter {
+        width: 230px;
+        height: 679px;
+        padding: 0;
+        top: 75px;
+        font-size: 14px;
+        line-height: 17px;
+        left: 0;
+        box-shadow: none;
+        border-radius: none;
+       
+        &__close {
+            display: none;
+        }
+    }
+}

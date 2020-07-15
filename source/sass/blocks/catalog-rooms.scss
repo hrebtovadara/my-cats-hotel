@@ -52,9 +52,19 @@
 @media (min-width: $desktop-width) {
     .catalog-rooms {
         position: relative;
+        padding-top: 40px;
 
         &__list {
             margin-left: 300px;
         }
+
+        &__filters {
+            min-width: 180px;
+        }
+
+        &__head {
+            padding: 25px 0;
+        }
+
     }
 }
