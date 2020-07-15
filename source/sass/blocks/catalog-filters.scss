@@ -57,5 +57,9 @@
         position: absolute;
         left: 0;
         top: 60px;
+
+        &__button {
+            display: none;
+        }
     }
 }
