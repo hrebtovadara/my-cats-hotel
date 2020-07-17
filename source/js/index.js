@@ -36,32 +36,43 @@ let filterBlur = document.querySelector(".catalog-filters__blur");
 let filterMenu = document.querySelector(".filter");
 let filterCloseButton = document.querySelector(".filter__close");
 
+filterButton.onclick = function () {
+  filterButton.classList.toggle("catalog-filters--view");
+  filterBlur.classList.toggle("catalog-filters--view");
+  filterMenu.classList.toggle("catalog-filters--view");
+}
 
-window.addEventListener('resize', function() {
-  let width = document.documentElement.clientWidth;
+filterCloseButton.onclick = function () {
+  filterButton.classList.toggle("catalog-filters--view");
+  filterBlur.classList.toggle("catalog-filters--view");
+  filterMenu.classList.toggle("catalog-filters--view");
+}
 
-  if (document.documentElement.clientWidth < 1366) {
-    filterButton.classList.remove("visually-hidden");
-    filterBlur.classList.add("visually-hidden");
-    filterMenu.classList.add("visually-hidden");
+// window.addEventListener('resize', function() {
+//   let width = document.documentElement.clientWidth;
 
-    filterButton.onclick = function () {
-      filterButton.classList.toggle("visually-hidden");
-      filterBlur.classList.toggle("visually-hidden");
-      filterMenu.classList.toggle("visually-hidden");
-    }
+//   if (document.documentElement.clientWidth < 1366) {
+//     filterButton.classList.remove("visually-hidden");
+//     filterBlur.classList.add("visually-hidden");
+//     filterMenu.classList.add("visually-hidden");
+
+//     filterButton.onclick = function () {
+//       filterButton.classList.toggle("visually-hidden");
+//       filterBlur.classList.toggle("visually-hidden");
+//       filterMenu.classList.toggle("visually-hidden");
+//     }
   
-    filterCloseButton.onclick = function () {
-      filterButton.classList.toggle("visually-hidden");
-      filterBlur.classList.toggle("visually-hidden");
-      filterMenu.classList.toggle("visually-hidden");
-    }
-  } else {
-    filterButton.classList.add("visually-hidden");
-    filterBlur.classList.add("visually-hidden");
-    filterMenu.classList.remove("visually-hidden");
-  }
-});
+//     filterCloseButton.onclick = function () {
+//       filterButton.classList.toggle("visually-hidden");
+//       filterBlur.classList.toggle("visually-hidden");
+//       filterMenu.classList.toggle("visually-hidden");
+//     }
+//   } else {
+//     filterButton.classList.add("visually-hidden");
+//     filterBlur.classList.add("visually-hidden");
+//     filterMenu.classList.remove("visually-hidden");
+//   }
+// });
 
 // let sortButton = document.querySelector(".sort__button");
 // let sortContainer = document.querySelector(".sort__container");
