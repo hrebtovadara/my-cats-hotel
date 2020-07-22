@@ -48,36 +48,17 @@ filterCloseButton.onclick = function () {
   filterMenu.classList.toggle("catalog-filters--view");
 }
 
-// window.addEventListener('resize', function() {
-//   let width = document.documentElement.clientWidth;
 
-//   if (document.documentElement.clientWidth < 1366) {
-//     filterButton.classList.remove("visually-hidden");
-//     filterBlur.classList.add("visually-hidden");
-//     filterMenu.classList.add("visually-hidden");
+let sortButton = document.querySelector(".sort__button");
+let sortButtonClose = document.querySelector(".sort__image--up");
+let sortContainer = document.querySelector(".sort__container");
 
-//     filterButton.onclick = function () {
-//       filterButton.classList.toggle("visually-hidden");
-//       filterBlur.classList.toggle("visually-hidden");
-//       filterMenu.classList.toggle("visually-hidden");
-//     }
-  
-//     filterCloseButton.onclick = function () {
-//       filterButton.classList.toggle("visually-hidden");
-//       filterBlur.classList.toggle("visually-hidden");
-//       filterMenu.classList.toggle("visually-hidden");
-//     }
-//   } else {
-//     filterButton.classList.add("visually-hidden");
-//     filterBlur.classList.add("visually-hidden");
-//     filterMenu.classList.remove("visually-hidden");
-//   }
-// });
+sortButton.onclick = function() {
+  sortButton.classList.toggle("visually-hidden");
+  sortContainer.classList.toggle("visually-hidden");
+}
 
-// let sortButton = document.querySelector(".sort__button");
-// let sortContainer = document.querySelector(".sort__container");
-
-// sortButton.onclick = function() {
-//   sortButton.classList.toggle("visually-hidden");
-//   sortContainer.classList.toggle("visually-hidden");
-// }
+sortButtonClose.onclick = function() {
+  sortButton.classList.toggle("visually-hidden");
+  sortContainer.classList.toggle("visually-hidden");
+}
