@@ -61,16 +61,17 @@
         border: none;
         margin-top: 15px;
 
-        &--enter {
-            background: #FAC663;
-            border: none;
-            
-        }
+        background-color: white;
+        border: 2px solid #FAC663;
 
-        &--delete {
-            background-color: white;
-            border: 2px solid #FAC663;
-        }
+            &:hover {
+                background: #FAC663;
+                border: none; 
+            }
+
+            &:active {
+                opacity: .8;
+            }
     }
 
     &__area {
