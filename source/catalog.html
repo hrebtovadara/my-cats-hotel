@@ -413,7 +413,7 @@
             </div>
         </footer>
 
-        <div class="booking visually-hidden">
+        <div class="booking">
             <h3 class="booking__title">Забронировать номер</h3>
             <form class="booking__form">
                 <fieldset class="booking__data">
@@ -425,13 +425,18 @@
                 <fieldset class="booking__date">
                     <legend class="booking__date--title">Дата заезда</legend>
                     <div class="booking__container-date">
-                        <span class=""></span>
-                        <input class="booking__container-date">
-                        <span class=""></span>
-                        <input class="booking__container-date">
+                        <span class="">c</span>
+                        <input class="booking__input-date">
+                        <span class="">до</span>
+                        <input class="booking__input-date">
                     </div>
                 </fieldset>
-                <button class="booking__button">Отправить заявку</button>
+                <button class="booking__button-form">Отправить заявку</button>
+                <button class="booking__button-close">
+                    <svg class="filter__close-button">
+                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
             </form>
         </div>
 
