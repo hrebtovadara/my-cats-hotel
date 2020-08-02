@@ -413,25 +413,29 @@
             </div>
         </footer>
 
-        <div class="booking">
+        <div class="booking visually-hidden">
             <h3 class="booking__title">Забронировать номер</h3>
             <form class="booking__form">
                 <fieldset class="booking__data">
-                    <input class="booking__data-input" placeholder="lol">
-                    <input class="booking__data-input" placeholder="lol">
-                    <input class="booking__data-input" placeholder="lol">
-                    <input class="booking__data-input" placeholder="lol">
+                    <input class="booking__data-input" placeholder="Ваше имя" name="booking-name">
+                    <input class="booking__data-input" placeholder="Имя Питомца" name="booking-pet-name">
+                    <input class="booking__data-input" placeholder="Телефон" type="tel" name="booking-tel">
+                    <input class="booking__data-input" placeholder="E-mail" type="email" name="booking-email">
                 </fieldset>
                 <fieldset class="booking__date">
                     <legend class="booking__date--title">Дата заезда</legend>
-                    <div class="booking__container-date">
-                        <span class="">c</span>
-                        <input class="booking__input-date">
-                        <span class="">до</span>
-                        <input class="booking__input-date">
-                    </div>
+                    <ul class="booking__date-list">
+                        <li class="booking__date-item">
+                            <span>c</span>
+                            <input class="booking__input-date" placeholder="26.01.2020" name="booking-date-from">
+                        </li>
+                        <li class="booking__date-item">
+                            <span>по</span>
+                            <input class="booking__input-date" placeholder="26.02.2020" name="booking-date-to">
+                        </li>
+                    </ul>
                 </fieldset>
-                <button class="booking__button-form">Отправить заявку</button>
+                <button class="booking__button-form button button--orange">Отправить заявку</button>
                 <button class="booking__button-close">
                     <svg class="filter__close-button">
                         <use xlink:href="img/sprite.svg#icon-close"></use>
@@ -444,5 +448,6 @@
 </body>
 
 <script src="js/index.js"></script>
+<script src="js/pop-up.js"></script>
 
 </html>
