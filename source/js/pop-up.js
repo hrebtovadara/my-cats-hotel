@@ -1,6 +1,6 @@
 let bookingPopUp = document.querySelector('.booking');
 let bookingCloseButton = document.querySelector(".booking__button-close");
-let catalogButtons = document.querySelectorAll(".our-rooms__button");
+let catalogButtons = document.querySelectorAll(".button-booking");
 let bookingBlur = document.querySelectorAll(".booking-blur-fon");
 let bookingButtonForm = document.querySelector(".booking__button-form");
 let thanksPopUp = document.querySelector(".pop-up-thanks");

@@ -10,7 +10,7 @@
 
 <body>
   <div class="general">
-    <header class="header header--no-js ">
+    <header class="header header--no-js booking-blur-fon">
       <div class="logo header__logo">
         <a href="#"><img class="logo__image" src="img/logo.svg"></a>
       </div>
@@ -50,12 +50,12 @@
         </svg>
       </button>
     </header>
-    <main class="main">
+    <main class="main booking-blur-fon">
       <section class="banner main__banner">
         <p class="banner__text banner__text--sity">Санкт-Петербург</p>
         <h2 class="banner__title">Котейка</h2>
         <p class="banner__text banner__text--description">Уютная гостиница для котов и кошек</p>
-        <button class="button button--white banner__button">Забронировать</button>
+        <a href="catalog.html"><button class="button button--white banner__button">Забронировать</button></a>
       </section>
       <section class="reasons-container container">
         <h3 class="reasons-container__title title-text" id="reasons-link">Почему мы?</h3>
@@ -137,7 +137,7 @@
                 <li class="room-description__item">Размеры (ШхГхВ) — <br /> 90х100х180 см</li>
                 <li class="room-description__item">Цена за сутки: 200₽</li>
               </ul>
-              <button class="room-description__button button button--orange">Забронировать</button>
+              <button class="room-description__button button button--orange button-booking">Забронировать</button>
             </div>
           </li>
           <li class="rooms-container__item rooms-block visually-hidden">
@@ -149,7 +149,7 @@
                 <li class="room-description__item">Размеры (ШхГхВ) - 100х125х180 см</li>
                 <li class="room-description__item">Цена за сутки: 250₽</li>
               </ul>
-              <button class="room-description__button button button--orange">Забронировать</button>
+              <button class="room-description__button button button--orange button-booking">Забронировать</button>
             </div>
           </li>
           <li class="rooms-container__item rooms-block visually-hidden">
@@ -161,7 +161,7 @@
                 <li class="room-description__item">Размеры (ШхГхВ)- 125х125х180 см</li>
                 <li class="room-description__item">Цена за сутки: 350₽</li>
               </ul>
-              <button class="room-description__button button button--orange">Забронировать</button>
+              <button class="room-description__button button button--orange button-booking">Забронировать</button>
             </div>
           </li>
         </ul>
@@ -186,8 +186,8 @@
         <h3 class="feedback-container__title title-text" id="feedback-link">Отзывы</h3>
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
-            <ul class="feedback-container__list feedback-list glide__slides">
-              <li class="feedback-list__item feedback-block glide__slide">
+            <ul class="feedback-container__list  glide__slides">
+              <li class="feedback-block glide__slide">
                 <p class="feedback-block__text">Первый раз пришлось оставить нашего котика в гостинице,
                   очень переживали. Администратор Мария каждый день высылала нам фото нашего питомца,
                   рассказывала, как он себя чувствует. И мы, и котик остались очень довольны!</p>
@@ -196,7 +196,7 @@
                   <time class="feedback-block__info--data" datetime="2019-11-15">15 ноября, 2019</time>
                 </div>
               </li>
-              <li class="feedback-list__item feedback-block glide__slide">
+              <li class="feedback-block glide__slide">
                 <p class="feedback-block__text">Гостиницу для питомцев нам посоветовали друзья.
                   Они всегда оставляют здесь своего кота, когда уезжают. В “Котейке” очень хорошо
                   заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.</p>
@@ -205,7 +205,7 @@
                   <time class="feedback-block__info--data" datetime="2019-11-15">10 октября, 2019</time>
                 </div>
               </li>
-              <li class="feedback-list__item feedback-block glide__slide">
+              <li class="feedback-block glide__slide">
                 <p class="feedback-block__text">Мой кот — настоящая привереда, угодить ему сложно.
                   У меня были особые требования к уходу за ним, и “Котейка” отлично справились.
                   Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.</p>
@@ -225,12 +225,10 @@
               </div>
             </div>
             <div class="switch__button button-arrow glide__arrows" data-glide-el="controls">
-              <button data-glide-dir="<"
-                class="  button-arrow__item button-arrow__item--left">
+              <button data-glide-dir="<" class="  button-arrow__item button-arrow__item--left">
                 <img src="img/arrow/icon-arrow-left-orange.svg" alt="">
               </button>
-              <button data-glide-dir=">"
-                class="  button-arrow__item button-arrow__item--right">
+              <button data-glide-dir=">" class="  button-arrow__item button-arrow__item--right">
                 <img src="img/arrow/icon-arrow-right-orange.svg" alt="">
               </button>
             </div>
@@ -277,7 +275,7 @@
         </div>
         <div class="footer__address--map footer-map">
           <div style="position:relative;overflow:hidden;">
-           <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
+            <iframe class="footer-map__iframe" src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
           </div>
         </div>
       </div>
@@ -300,10 +298,55 @@
         <p class="footer-confidentiality__politic">Политика конфиденциальности</p>
       </div>
     </footer>
+
+    <div class="booking visually-hidden">
+      <h3 class="booking__title">Забронировать номер</h3>
+      <form class="booking__form">
+        <fieldset class="booking__data">
+          <input class="booking__data-input" placeholder="Ваше имя" name="booking-name" required>
+          <input class="booking__data-input" placeholder="Имя Питомца" name="booking-pet-name" required>
+          <input class="booking__data-input" placeholder="Телефон" type="tel" name="booking-tel" required>
+          <input class="booking__data-input" placeholder="E-mail" type="email" name="booking-email" required>
+        </fieldset>
+        <fieldset class="booking__date">
+          <div class="booking__date-container">
+            <p class="booking__date--title">Дата заезда</p>
+            <ul class="booking__date-list">
+              <li class="booking__date-item">
+                <span>c</span>
+                <input class="booking__input-date" placeholder="26.01.2020" name="booking-date-from" required>
+              </li>
+              <li class="booking__date-item">
+                <span>по</span>
+                <input class="booking__input-date" placeholder="26.02.2020" name="booking-date-to" required>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <button class="booking__button-form button button--orange" type="submit">Отправить заявку</button>
+        <button class="booking__button-close">
+          <svg class="filter__close-button">
+            <use xlink:href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div class="pop-up-thanks visually-hidden">
+      <h3 class="pop-up-thanks__title">Спасибо за заявку!</h3>
+      <p class="pop-up-thanks__text">Мы свяжемся с вами в ближайшее время</p>
+      <button class="pop-up-thanks__button button button--orange">Ок</button>
+      <button class="pop-up-thanks__button-close">
+        <svg class="filter__close-button">
+          <use xlink:href="img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </body>
 
 <script src="js/index.js"></script>
+<script src="js/pop-up.js"></script>
 <script src="js/glide.min.js"></script>
 <script type="module" src="js/slider.js"></script>
 
