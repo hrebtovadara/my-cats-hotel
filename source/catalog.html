@@ -10,7 +10,7 @@
 
 <body>
     <div class="general">
-        <header class="header header--no-js ">
+        <header class="header header--no-js booking-blur-fon">
             <div class="logo header__logo">
                 <a href="index.html"><img class="logo__image" src="img/logo.svg"></a>
             </div>
@@ -54,7 +54,7 @@
             </button>
         </header>
 
-        <main class="container general">
+        <main class="container general booking-blur-fon">
             <section class="catalog-rooms">
                 <div class="catalog-rooms__head">
                     <h3 class="catalog-rooms__title">Наши номера</h3>
@@ -417,25 +417,29 @@
             <h3 class="booking__title">Забронировать номер</h3>
             <form class="booking__form">
                 <fieldset class="booking__data">
-                    <input class="booking__data-input" placeholder="Ваше имя" name="booking-name">
-                    <input class="booking__data-input" placeholder="Имя Питомца" name="booking-pet-name">
-                    <input class="booking__data-input" placeholder="Телефон" type="tel" name="booking-tel">
-                    <input class="booking__data-input" placeholder="E-mail" type="email" name="booking-email">
+                    <input class="booking__data-input" placeholder="Ваше имя" name="booking-name" required>
+                    <input class="booking__data-input" placeholder="Имя Питомца" name="booking-pet-name" required>
+                    <input class="booking__data-input" placeholder="Телефон" type="tel" name="booking-tel" required>
+                    <input class="booking__data-input" placeholder="E-mail" type="email" name="booking-email" required>
                 </fieldset>
                 <fieldset class="booking__date">
-                    <legend class="booking__date--title">Дата заезда</legend>
-                    <ul class="booking__date-list">
-                        <li class="booking__date-item">
-                            <span>c</span>
-                            <input class="booking__input-date" placeholder="26.01.2020" name="booking-date-from">
-                        </li>
-                        <li class="booking__date-item">
-                            <span>по</span>
-                            <input class="booking__input-date" placeholder="26.02.2020" name="booking-date-to">
-                        </li>
-                    </ul>
+                    <div class="booking__date-container">
+                        <p class="booking__date--title">Дата заезда</p>
+                        <ul class="booking__date-list">
+                            <li class="booking__date-item">
+                                <span>c</span>
+                                <input class="booking__input-date" placeholder="26.01.2020" name="booking-date-from"
+                                    required>
+                            </li>
+                            <li class="booking__date-item">
+                                <span>по</span>
+                                <input class="booking__input-date" placeholder="26.02.2020" name="booking-date-to"
+                                    required>
+                            </li>
+                        </ul>
+                    </div>
                 </fieldset>
-                <button class="booking__button-form button button--orange">Отправить заявку</button>
+                <button class="booking__button-form button button--orange" type="submit">Отправить заявку</button>
                 <button class="booking__button-close">
                     <svg class="filter__close-button">
                         <use xlink:href="img/sprite.svg#icon-close"></use>
@@ -444,6 +448,16 @@
             </form>
         </div>
 
+        <div class="pop-up-thanks visually-hidden">
+            <h3 class="pop-up-thanks__title">Спасибо за заявку!</h3>
+            <p class="pop-up-thanks__text">Мы свяжемся с вами в ближайшее время</p>
+            <button class="pop-up-thanks__button button button--orange">Ок</button>
+            <button class="pop-up-thanks__button-close">
+                <svg class="filter__close-button">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 </body>
 

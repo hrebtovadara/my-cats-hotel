@@ -1,6 +1,9 @@
 .booking {
-    top: 102px;
-    left: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: 0 auto;
     width: 290px;
     height: 656px;
     padding: 60px 15px;
@@ -8,7 +11,6 @@
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 0px 25px rgba(153, 153, 153, 0.25);
-    border-radius: 10px;
     z-index: 6;
 
     &__title {
@@ -68,10 +70,12 @@
         padding: 10px 0;
     
         &--title {
+            margin: 0;
             font-family: var(--font-open-sans);
             font-size: 15px;
             line-height: 18px;
             text-align: left;
+            margin-bottom: 15px;
         }
     }
 
@@ -120,5 +124,78 @@
 
     &__button-form {
         margin-top: 25px;
+    }
+
+    &--blur {
+        filter: blur(8px);
+    }
+
+}
+
+@media (min-width: $tablet-width) {
+    .booking {
+        width: 502px;
+        height: 629px;
+        padding: 60px 30px;
+
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+            padding-bottom: 40px;
+        }
+    
+        &__form {
+            min-height: 440px;
+            width: 440px;
+        }
+        
+        &__data-input {
+            width: 442px;
+            padding: 20px 30px;
+            font-size: 15px;     
+        }
+
+        &__date--title {
+            margin: 0;
+        }
+    
+        &__date-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__input-date {
+            width: 132px;
+            padding: 20px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+    
+        &__date-list {
+            width: 327px;
+        }
+    
+        &__date-item {
+            margin-left: 16px;
+        }
+        &__button-close {
+            top: 25px;
+            right: 25px;
+        }
+    }
+}
+
+
+@media (min-width: $desktop-width) {
+    .booking {
+        width: 570px;
+        height: 649px;
+        padding: 70px;
+
+        &__button-close {
+            top: 40px;
+            right: 40px;
+        }
     }
 }
