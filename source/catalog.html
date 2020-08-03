@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="general">
+        <header class="header header--no-js booking-blur-fon">
+            <div class="logo header__logo">
+                <a href="index.html"><img class="logo__image" src="img/logo.svg"></a>
+            </div>
+            <nav class="nav-header header__nav header--toggle">
+                <ul class="nav-header__list">
+                    <li class="nav-header__item"><a href="index.html#reasons-link" class="nav-header__link">Почему
+                            мы?</a></li>
+                    <li class="nav-header__item"><a href="index.html#rooms-link" class="nav-header__link">Номера</a>
+                    </li>
+                    <li class="nav-header__item"><a href="index.html#feedback-link" class="nav-header__link">Отзывы</a>
+                    </li>
+                    <li class="nav-header__item nav-header__item--search"><a href="index.html#address-link"
+                            class="nav-header__link">Как нас найти</a></li>
+                    <li class="nav-header__item nav-header__item--contacts"><a href="index.html#address-link"
+                            class="nav-header__link">Контакты</a></li>
+                </ul>
+                <div class="header__contacts">
+                    <p class="header__contacts--number">8 (800) 333-55-99</p>
+                    <div class="header__contacts--icons social-icon">
+                        <svg class="social-icon__item">
+                            <use xlink:href="img/sprite.svg#icon-fb"></use>
+                        </svg>
+                        <svg class="social-icon__item">
+                            <use xlink:href="img/sprite.svg#icon-inst"></use>
+                        </svg>
+                        <svg class="social-icon__item">
+                            <use xlink:href="img/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <button class="nav-header__button nav-header__button--close header--close">
+                <svg class="nav-header__button--svg-close">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+            <button class="nav-header__button nav-header__button--menu header--close">
+                <svg class="nav-header__button--svg-menu">
+                    <use xlink:href="img/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </header>
+
+        <main class="container general booking-blur-fon">
+            <section class="catalog-rooms">
+                <div class="catalog-rooms__head">
+                    <h3 class="catalog-rooms__title">Наши номера</h3>
+                    <div class="catalog-rooms__filters">
+                        <div class="catalog-filters">
+                            <button class="catalog-filters__button">Фильтры</button>
+                            <div class="catalog-filters__blur catalog-filters--view"></div>
+                            <div class="filter catalog-filters--view">
+                                <button class="filter__close">
+                                    <svg class="filter__close-button">
+                                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                                    </svg>
+                                </button>
+                                <div class="filter__price">
+                                    <p class="filter__name">Цена за сутки</p>
+                                    <input class="filter__price-from" placeholder="от 100">
+                                    <input class="filter__price-to" placeholder="до 600">
+                                </div>
+                                <div class="filter__area">
+                                    <p class="filter__name">Площадь</p>
+                                    <ul class="filter__area-list filter-catalog">
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="0-63"
+                                                name="filter-catalog" checked>
+                                            <label class="filter-catalog__label" for="0-63">0,63 м2</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="0-90"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="0-90">0,90 м2</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="1-13"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="1-13">1,13 м2</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="1-56"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="1-56">1,56 м2</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="2-56"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="2-56">2,56 м2</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="2-88"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="2-88">2,88 м2</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="filter__furnishing">
+                                    <p class="filter__name">Оснажение номера</p>
+                                    <ul class="filter__furnishing-list filter-catalog">
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="empty"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="empty">Пустой номер</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="bed"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="bed">Лежак</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="claw-point"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="claw-point">Когтеточка</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="game"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="game">Игровой-комплекс</label>
+                                        </li>
+                                        <li class="filter-catalog__item">
+                                            <input type="checkbox" class="filter-catalog__checkbox" id="house"
+                                                name="filter-catalog">
+                                            <label class="filter-catalog__label" for="house">Домик</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="filter__button filter__button--enter">Подобрать</button>
+                                <button class="filter__button filter__button--delete">Сбросить фильтр</button>
+                            </div>
+
+                        </div>
+                        <div class="sort">
+                            <button class="sort__button">
+                                <p class="sort__enter">
+                                    <svg class="sort__enter-icon">
+                                        <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                    </svg>
+                                    По площади</p>
+                                <div class="sort__image sort__image--down "></div>
+                            </button>
+                            <div class="sort__container visually-hidden">
+                                <ul class="sort__list">
+                                    <li class="sort__item sort__item--up">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                        </svg>
+                                        По площади</li>
+                                    <li class="sort__item sort__item--down">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
+                                        </svg>
+                                        По площади</li>
+                                    <li class="sort__item sort__item--up">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-down-filter"></use>
+                                        </svg>
+                                        По цене</li>
+                                    <li class="sort__item sort__item--down">
+                                        <svg class="sort__enter-icon">
+                                            <use xlink:href="img/sprite.svg#icon-arrow-up-filter"></use>
+                                        </svg>
+                                        По цене</li>
+                                </ul>
+                                <div class="sort__image sort__image--up"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="catalog-rooms__list">
+                    <li class="catalog-rooms__item our-rooms">
+                        <div class="our-rooms__image-container">
+                            <img class="our-rooms__image" src="img/catalog-rooms/catalog-econom.jpg">
+                        </div>
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Эконом</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 90х70х180 см</li>
+                                <li class="our-rooms__item">Площадь - 0,63 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#emty"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: <span
+                                        class="our-rooms__item--price">100₽</span></li>
+                            </ul>
+                            <button class="our-rooms__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <div class="our-rooms__image-container">
+                            <img class="our-rooms__image" src="img/catalog-rooms/catalog-econom-plus.jpg">
+                        </div>
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Эконом-плюс</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 90х100х180 см</li>
+                                <li class="our-rooms__item">Площадь - 0,90 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#bed"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#claw-point"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: <span
+                                        class="our-rooms__item--price">200₽</span></li>
+                            </ul>
+                            <button class="our-rooms__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <div class="our-rooms__image-container">
+                            <img class="our-rooms__image" src="img/catalog-rooms/catalog-comfort.jpg">
+                        </div>
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Комфорт</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 100х125х180 см</li>
+                                <li class="our-rooms__item">Площадь - 1,13 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#bed"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#claw-point"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#game"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: <span
+                                        class="our-rooms__item--price">350₽</span></li>
+                            </ul>
+                            <button class="our-rooms__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <div class="our-rooms__image-container">
+                            <img class="our-rooms__image" src="img/catalog-rooms/catalog-seut.jpg">
+                        </div>
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Сьют</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 125х125х180 см</li>
+                                <li class="our-rooms__item">Площадь - 1,56 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#bed"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#claw-point"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#game"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: <span
+                                        class="our-rooms__item--price">250₽</span></li>
+                            </ul>
+                            <button class="our-rooms__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <div class="our-rooms__image-container">
+                            <img class="our-rooms__image" src="img/catalog-rooms/catalog-lux.jpg">
+                        </div>
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Люкс</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 160х160х180 см</li>
+                                <li class="our-rooms__item">Площадь - 2,56 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#bed"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#claw-point"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#game"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#house"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: <span
+                                        class="our-rooms__item--price">500₽</span></li>
+                            </ul>
+                            <button class="our-rooms__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                    <li class="catalog-rooms__item our-rooms">
+                        <div class="our-rooms__image-container">
+                            <img class="our-rooms__image" src="img/catalog-rooms/catalog-super-lux.jpg">
+                        </div>
+                        <div class="our-rooms__block">
+                            <p class="our-rooms__name">Супер-люкс</p>
+                            <ul class="our-rooms__list">
+                                <li class="our-rooms__item">Размеры (ШхГхВ) - 180х160х180 см</li>
+                                <li class="our-rooms__item">Площадь - 2,88 м2</li>
+                                <li class="our-rooms__item our-rooms__item--icons">Оснащение номера
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#bed"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#claw-point"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#game"></use>
+                                    </svg>
+                                    <svg class="our-rooms__svg">
+                                        <use class="" xlink:href="img/sprite.svg#house"></use>
+                                    </svg>
+                                </li>
+                                <li class="our-rooms__item">Цена за сутки: <span
+                                        class="our-rooms__item--price">500₽</span></li>
+                            </ul>
+                            <button class="our-rooms__button button button--orange">Забронировать</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="catalog-sale">
+                <p class="catalog-sale__title">Каждый 7-й день</p>
+                <p class="catalog-sale__title catalog-sale__title--free">бесплатно!</p>
+                <p class="catalog-sale__subtitle">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+                <button class="button button--white">Забронировать</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__address">
+                <div class="footer__address--text address">
+                    <h3 class="address__title  title-text" id="address-link">Как нас найти</h3>
+                    <ul class="address__list">
+                        <li class="address__item">
+                            <p class="address__item--label">Адрес</p>
+                            <p class="address__item--description">Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">Режим работы</p>
+                            <p class="address__item--description">Ежедневно, с 9:00 до 20:00</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">Телефон</p>
+                            <p class="address__item--description">8 (800) 333-55-99</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">E-mail</p>
+                            <p class="address__item--description">info@cat-hotel.ru</p>
+                        </li>
+                        <li class="address__item">
+                            <p class="address__item--label">Социальные сети</p>
+                            <div class="address__item--icons social-icon">
+                                <a href="#"><svg class="social-icon__item">
+                                        <use xlink:href="img/sprite.svg#icon-fb"></use>
+                                    </svg></a>
+                                <a href="#"><svg class="social-icon__item">
+                                        <use xlink:href="img/sprite.svg#icon-inst"></use>
+                                    </svg></a>
+                                <a href="#"><svg class="social-icon__item">
+                                        <use xlink:href="img/sprite.svg#icon-vk"></use>
+                                    </svg></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__address--map footer-map">
+                    <div style="position:relative;overflow:hidden;">
+                        <iframe class="footer-map__iframe"
+                            src="https://yandex.ru/map-widget/v1/-/CCQhMZxYTC">lool</iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__nav footer-nav">
+                <div class="footer-nav__logo">
+                    <a href="#"><img src="img/logo-desktop.png"></a>
+                </div>
+                <nav class="footer-nav__navigation nav-footer">
+                    <ul class="nav-footer__list">
+                        <li class="nav-footer__item"><a href="index.html#reasons-link" class="nav-footer__link">Почему
+                                мы?</a></li>
+                        <li class="nav-footer__item"><a href="index.html#feedback-link"
+                                class="nav-footer__link">Отзывы</a>
+                        </li>
+                        <li class="nav-footer__item"><a href="index.html#rooms-link" class="nav-footer__link">Номера</a>
+                        </li>
+                        <li class="nav-footer__item"><a href="index.html#address-link" class="nav-footer__link">Как нас
+                                найти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-confidentiality">
+                <p class="footer-confidentiality__year">© 2019 Все права защищены</p>
+                <p class="footer-confidentiality__politic">Политика конфиденциальности</p>
+            </div>
+        </footer>
+
+        <div class="booking visually-hidden">
+            <h3 class="booking__title">Забронировать номер</h3>
+            <form class="booking__form">
+                <fieldset class="booking__data">
+                    <input class="booking__data-input" placeholder="Ваше имя" name="booking-name" required>
+                    <input class="booking__data-input" placeholder="Имя Питомца" name="booking-pet-name" required>
+                    <input class="booking__data-input" placeholder="Телефон" type="tel" name="booking-tel" required>
+                    <input class="booking__data-input" placeholder="E-mail" type="email" name="booking-email" required>
+                </fieldset>
+                <fieldset class="booking__date">
+                    <div class="booking__date-container">
+                        <p class="booking__date--title">Дата заезда</p>
+                        <ul class="booking__date-list">
+                            <li class="booking__date-item">
+                                <span>c</span>
+                                <input class="booking__input-date" placeholder="26.01.2020" name="booking-date-from"
+                                    required>
+                            </li>
+                            <li class="booking__date-item">
+                                <span>по</span>
+                                <input class="booking__input-date" placeholder="26.02.2020" name="booking-date-to"
+                                    required>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <button class="booking__button-form button button--orange" type="submit">Отправить заявку</button>
+                <button class="booking__button-close">
+                    <svg class="filter__close-button">
+                        <use xlink:href="img/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="pop-up-thanks visually-hidden">
+            <h3 class="pop-up-thanks__title">Спасибо за заявку!</h3>
+            <p class="pop-up-thanks__text">Мы свяжемся с вами в ближайшее время</p>
+            <button class="pop-up-thanks__button button button--orange">Ок</button>
+            <button class="pop-up-thanks__button-close">
+                <svg class="filter__close-button">
+                    <use xlink:href="img/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</body>
+
+<script src="js/index.js"></script>
+<script src="js/pop-up.js"></script>
+
+</html>

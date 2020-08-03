@@ -1,0 +1,201 @@
+.booking {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20%;
+    margin: 0 auto;
+    width: 290px;
+    height: 656px;
+    padding: 60px 15px;
+    background: var(--color-pop-up-background);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(153, 153, 153, 0.25);
+    z-index: 6;
+
+    &__title {
+        margin: 0;
+        font-family: var(--font-rubik);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 30px;
+    }
+
+    &__form {
+        min-height: 451px;
+        width: 260px;
+    }
+
+    &__data {
+        min-height: 268px;
+        border: none;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    &__data-input {
+        width: 260px;
+        height: 52px;
+        margin: 0;
+        padding: 20px;
+
+        border: 1px solid var(--color-pop-up-input);
+        box-sizing: border-box;
+        border-radius: 25px;
+
+        font-family: var(--font-open-sans);
+        font-size: 14px;     
+        
+        &:hover {
+            border: 1px solid var(--color-autor);
+        }
+
+        &:focus, &:active {
+            border-radius: 25px;
+            border: 2px solid var(--color-autor);
+            outline: none;
+        }
+    }
+
+    &__data-input + .booking__data-input {
+        margin-top: 20px;
+    }
+
+    &__date {
+
+        margin: 0;
+        border: none;
+        padding: 10px 0;
+    
+        &--title {
+            margin: 0;
+            font-family: var(--font-open-sans);
+            font-size: 15px;
+            line-height: 18px;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__input-date {
+        width: 107px;
+        height: 52px;
+        padding: 20px 15px;
+        border: 1px solid var(--color-pop-up-input);
+        box-sizing: border-box;
+        border-radius: 25px;
+        margin-left: 5px;
+        font-size: 14px;
+
+        &:hover {
+            border: 1px solid var(--color-autor);
+        }
+
+        &:focus, &:active {
+            border-radius: 25px;
+            border: 2px solid var(--color-autor);
+            outline: none;
+        }
+    }
+
+    &__date-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__date-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button-close {
+        border: none;
+        background: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__button-form {
+        margin-top: 25px;
+    }
+
+    &--blur {
+        filter: blur(8px);
+    }
+
+}
+
+@media (min-width: $tablet-width) {
+    .booking {
+        width: 502px;
+        height: 629px;
+        padding: 60px 30px;
+
+        &__title {
+            font-size: 28px;
+            line-height: 33px;
+            padding-bottom: 40px;
+        }
+    
+        &__form {
+            min-height: 440px;
+            width: 440px;
+        }
+        
+        &__data-input {
+            width: 442px;
+            padding: 20px 30px;
+            font-size: 15px;     
+        }
+
+        &__date--title {
+            margin: 0;
+        }
+    
+        &__date-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        &__input-date {
+            width: 132px;
+            padding: 20px;
+            margin-left: 10px;
+            font-size: 15px;
+        }
+    
+        &__date-list {
+            width: 327px;
+        }
+    
+        &__date-item {
+            margin-left: 16px;
+        }
+        &__button-close {
+            top: 25px;
+            right: 25px;
+        }
+    }
+}
+
+
+@media (min-width: $desktop-width) {
+    .booking {
+        width: 570px;
+        height: 649px;
+        padding: 70px;
+
+        &__button-close {
+            top: 40px;
+            right: 40px;
+        }
+    }
+}

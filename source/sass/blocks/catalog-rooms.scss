@@ -1,0 +1,70 @@
+.catalog-rooms {
+    &__title {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 33px;
+        margin: 0;
+        padding: 35px 0 30px;
+    }
+
+    &__filters {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    &__list {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .catalog-rooms {
+
+        padding-top: 40px;
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        &__head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        &__filters {
+            min-width: 324px;
+        }
+
+        &__title {
+            font-size: 36px;
+            padding: 0;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog-rooms {
+        position: relative;
+        padding-top: 40px;
+
+        &__list {
+            margin-left: 300px;
+        }
+
+        &__filters {
+            min-width: 180px;
+        }
+
+        &__head {
+            padding: 25px 0;
+        }
+
+    }
+}

@@ -1,0 +1,111 @@
+.our-rooms {
+    width: 290px;
+    min-height: 428px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    margin-top: 30px;
+    font-size: 13px;
+    box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+    
+    &__image-container {
+        width: 290px;
+        height: 185px;
+    }
+
+    &__image {
+        display: block;
+        object-fit: cover;
+        height: 185px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    &__block {
+        padding: 25px;
+        min-height: 243px;
+        border: 1px solid var(--color-inactive);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+
+    &__name {
+        margin: 0;
+        font-family: var(--font-rubik);
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 10px;
+    }
+
+    &__svg {
+        width: 16px;
+        height: 18px;
+        margin-left: 12px;  
+        fill: var(--color-catalog-icon);
+    }
+
+    &__item {
+        padding-bottom: 10px;
+
+        &--price {
+            font-size: 17px;
+            line-height: 18px;
+            padding-left: 4px;
+        }
+
+        &--icons {
+            display: flex;
+        }
+    }
+
+    &__button {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 14px;
+        height: 50px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .our-rooms {
+        width: 324px;
+        min-height: 428px;
+
+        &__image-container {
+            width: 324px;
+        }
+
+        &__image {
+            object-fit: cover;
+        }
+
+        &__button {
+            width: 274px;
+        }
+
+        &:hover {
+            box-shadow: 0 0 25px rgba(208, 208, 208, 0.7);
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .our-rooms {
+        width: 270px;
+        min-height: 428px;
+
+        &__image-container {
+            width: 270px;
+        }
+
+        &__button {
+            width: 230px;
+        }
+
+        &__block {
+            padding: 25px 20px;
+        }
+
+        &__svg {
+            margin-left: 8px;
+        }
+    }
+}

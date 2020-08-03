@@ -1,0 +1,83 @@
+.catalog-sale {
+    background-image: url("../../img/fons/advertising-mobile.png");
+    width: 290px;
+    height: 496px;
+    text-align: center;
+    padding: 45px 25px;
+    margin: 70px 0;
+
+    &__title {
+        font-family: var(--font-rubik);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        margin: 0;
+
+        &--free {
+            font-size: 37px;
+            line-height: 44px;
+        }
+    }
+
+    &__subtitle {
+        font-family: var(--font-open-sans);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        padding: 10px 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .catalog-sale {
+        background-image: url("../../img/fons/advertising-tablet.png");
+        width: 678px;
+        height: 359px;
+        text-align: left;
+        padding: 60px 50px;
+        margin: 120px 0;
+
+        &__title {
+            font-size: 36px;
+            line-height: 43px;
+               
+            &--free {
+                font-size: 56px;
+                line-height: 57px;
+            }
+        }
+
+        &__subtitle {
+            width: 239px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .catalog-sale {
+        background-image: url("../../img/fons/advertising-desktop.png");
+        width: 1170px;
+        height: 379px;
+        text-align: left;
+        padding:  70px 270px;
+        margin: 140px 0;
+
+        &__title {
+            font-size: 36px;
+            line-height: 37px;
+               
+            &--free {
+                font-size: 56px;
+                line-height: 66px;
+            }
+        }
+
+        &__subtitle {
+            width: 254px;
+        }
+    }
+}

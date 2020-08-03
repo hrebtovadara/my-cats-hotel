@@ -1,0 +1,76 @@
+.catalog-filters {
+
+    &__button {
+        width: 111px;
+        height: 35px;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 12px rgba(173, 152, 143, 0.18);
+        border-radius: 25px;
+        position: relative;
+        padding: 10px 15px 10px 34px;
+        font-size: 13px;
+        line-height: 17px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../../img/icon-filter.svg");
+            width: 12px;
+            height: 15px;
+            left: 15px;
+        }
+    }
+
+    &__blur {
+        position: absolute;
+        width: 320px;
+        height: 1601px;
+        left: 0px;
+        top: -62px;
+        background: rgba(255, 254, 253, 0.8);
+        backdrop-filter: blur(8px);
+        z-index: 4;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .catalog-filters {
+    
+        &__button {
+            width: 121px;
+        }
+
+        &__blur {
+            width: 768px;
+            height: 1351px;
+            left: 0px;
+            top: -76px; 
+        }
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+    .catalog-filters {
+        position: absolute;
+        left: 0;
+        top: 60px;
+
+        &__button {
+            display: none;
+        }
+
+        &__blur {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .catalog-filters {
+        &--view {
+            display: none;
+        }
+    }
+}

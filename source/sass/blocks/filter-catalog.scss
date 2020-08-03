@@ -1,0 +1,35 @@
+.filter-catalog {
+
+    &__item {
+        padding: 10px 0;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__label {
+        position: relative;
+        padding-left: 34px;
+    }
+
+    &__label::before {
+        position: absolute;
+        content: "";
+        top: -2px;
+        left: 1px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #E1E1E1;
+        padding: 1px 6px;
+    }
+
+    &__checkbox:checked + label::before {
+        content: url("../../img/icon-checkbox.svg");
+        
+    }
+
+    &__label:hover::before {
+        border: 1px solid  var(--color-catalog-icon);
+    }
+}

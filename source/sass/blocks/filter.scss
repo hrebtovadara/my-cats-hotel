@@ -1,0 +1,112 @@
+.filter {
+    position: absolute;
+    width: 290px;
+    height: 825px;
+    top: 40px;
+    left: 15px;
+    background: #FFFEFD;
+    box-shadow: 0px 4px 25px rgba(153, 153, 153, 0.25);
+    border-radius: 6px;
+    padding: 30px 25px;
+    font-size: 14px;
+    line-height: 17px;
+    z-index: 5;
+
+    &__close-button {
+        width: 15px;
+        height: 15px;
+    }
+
+    &__close {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border: none;
+        background-color: transparent;
+        right: 25px;
+        top: 20px;
+    }
+
+    &__name {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+
+    &__price {
+
+        min-height: 68px;
+        padding: 15px 0;
+
+        &-from,
+        &-to {
+            width: 99px;
+            height: 36px;
+            border: 1px solid var(--color-inactive);
+            margin-right: 10px;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 8px;
+        }
+    }
+
+    &__button {
+        width: 240px;
+        height: 42px;
+        font-weight: bold;
+        border-radius: 25px;
+        border: none;
+        margin-top: 15px;
+
+        background-color: white;
+        border: 2px solid #FAC663;
+
+            &:hover {
+                background: #FAC663;
+                border: none; 
+            }
+
+            &:active {
+                opacity: .8;
+            }
+    }
+
+    &__area {
+        padding: 15px 0;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .filter {
+        width: 332px;
+        height: 825px;
+        top: 60px;
+        font-size: 14px;
+        line-height: 17px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .filter {
+        width: 230px;
+        height: 679px;
+        padding: 0;
+        top: 75px;
+        font-size: 14px;
+        line-height: 17px;
+        left: 0;
+        box-shadow: none;
+        border-radius: none;
+       
+        &__close {
+            display: none;
+        }
+    }
+}
