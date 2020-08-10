@@ -35,3 +35,7 @@ thanksCloseButton.onclick = function() {
         element.classList.remove("booking--blur");
     });
 };
+
+bookingButtonForm.onclick = function() {
+    event.preventDefault()
+}

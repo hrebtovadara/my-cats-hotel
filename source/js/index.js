@@ -48,19 +48,21 @@ filterCloseButton.onclick = function () {
   filterMenu.classList.toggle("catalog-filters--view");
 }
 
-
-let sortButton = document.querySelector(".sort__button");
-let sortButtonClose = document.querySelector(".sort__image--up");
-let sortContainer = document.querySelector(".sort__container");
+let sortButton = document.querySelector(".sort__panel");
+let sortContainer = document.querySelector(".sort__list");
+let sortItem = document.querySelectorAll(".sort__item");
+let sortOpenCloseArrow =  document.querySelector(".sort__image");
 
 sortButton.onclick = function() {
-  sortButton.classList.toggle("visually-hidden");
+   sortContainer.classList.toggle("visually-hidden");
+   sortOpenCloseArrow.classList.toggle("sort__image--up");
+  sortOpenCloseArrow.classList.toggle("sort__image--down");
+}
+
+sortItem.forEach.onclick = function() {
   sortContainer.classList.toggle("visually-hidden");
 }
 
-sortButtonClose.onclick = function() {
-  sortButton.classList.toggle("visually-hidden");
-  sortContainer.classList.toggle("visually-hidden");
-}
+
 
 
