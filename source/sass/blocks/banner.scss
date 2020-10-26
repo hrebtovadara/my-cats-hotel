@@ -50,22 +50,22 @@
             z-index: -1;
         }
 
-        &_title {
+        &__title {
             font-size: 62px;
             line-height: 73px;
         }
     
-        &_text--description {
-            font-size: 20px;
-            line-height: 24px;
+        &__text--description {
+            font-size: 25px;
+            line-height: 28px;
         }
     
-        &_text--sity {
-            font-size: 14px;
-            line-height: 17px;
+        &__text--sity {
+            font-size: 19px;
+            line-height: 21px;
         }
     
-        &_button {
+        &__button {
             margin-top: 38px;
         }
     }
